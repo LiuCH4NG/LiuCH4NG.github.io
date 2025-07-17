@@ -1,4 +1,4 @@
-site_name: LiuCH4NG's Blog
+site_name: LiuCH4NG的博客
 
 theme:
   name: material
@@ -7,32 +7,39 @@ theme:
     - navigation.sections
     - toc.integrate
     - navigation.top
+    - navigation.footer
+    - navigation.expand
     - search.highlight
     - search.share
     - search.suggest
+    - content.code.copy
+    - content.code.annotate
   palette:
-    - scheme: default
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: blue
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/brightness-7
         name: Switch to dark mode
-    - scheme: slate
-      primary: indigo
-      accent: indigo
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: light blue
       toggle:
-        icon: material/toggle-switch
+        icon: material/brightness-4
         name: Switch to light mode
   font:
     text: Roboto
-    code: Roboto Mono
+    code: JetBrains Mono
   icon:
-    logo: material/book-open-variant
+    logo: material/home-circle
 
 nav:
   - Home: index.md
   - 技术:
     - UV 教程: tech/uv_tutorial.md
+    - 现代开发常用的AI工具: tech/AI_tools.md
   # 更多页面可以在这里添加
 
 markdown_extensions:
@@ -40,15 +47,28 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.superfences
   - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - attr_list
   - md_in_html
   - toc:
       permalink: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 extra:
   social:

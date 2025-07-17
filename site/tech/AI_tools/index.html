@@ -1,0 +1,995 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../uv_tutorial/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>现代开发常用的AI工具 - LiuCH4NG的博客</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#ai" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="LiuCH4NG的博客" class="md-header__button md-logo" aria-label="LiuCH4NG的博客" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.07 4.93C17.22 3 14.66 1.96 12 2c-2.66-.04-5.21 1-7.06 2.93C3 6.78 1.96 9.34 2 12c-.04 2.66 1 5.21 2.93 7.06C6.78 21 9.34 22.04 12 22c2.66.04 5.21-1 7.06-2.93C21 17.22 22.04 14.66 22 12c.04-2.66-1-5.22-2.93-7.07M17 12v6h-3.5v-5h-3v5H7v-6H5l7-7 7.5 7z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            LiuCH4NG的博客
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              现代开发常用的AI工具
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../uv_tutorial/" class="md-tabs__link">
+          
+  
+  
+  技术
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="LiuCH4NG的博客" class="md-nav__button md-logo" aria-label="LiuCH4NG的博客" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19.07 4.93C17.22 3 14.66 1.96 12 2c-2.66-.04-5.21 1-7.06 2.93C3 6.78 1.96 9.34 2 12c-.04 2.66 1 5.21 2.93 7.06C6.78 21 9.34 22.04 12 22c2.66.04 5.21-1 7.06-2.93C21 17.22 22.04 14.66 22 12c.04-2.66-1-5.22-2.93-7.07M17 12v6h-3.5v-5h-3v5H7v-6H5l7-7 7.5 7z"/></svg>
+
+    </a>
+    LiuCH4NG的博客
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    技术
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            技术
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../uv_tutorial/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UV 教程
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    现代开发常用的AI工具
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    现代开发常用的AI工具
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pythonuv" class="md-nav__link">
+    <span class="md-ellipsis">
+      二、 Python的现代化项目管理核心：UV
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、 Python的现代化项目管理核心：UV">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心优势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心工作流 (推荐)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode" class="md-nav__link">
+    <span class="md-ellipsis">
+      三、 VSCode智能编码插件
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、 VSCode智能编码插件">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-codegeex" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. CodeGeex
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-lingma" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Lingma (通义灵码)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-continue" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Continue
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装与配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscodecline" class="md-nav__link">
+    <span class="md-ellipsis">
+      四、 VSCode自主智能体：Cline
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、 VSCode自主智能体：Cline">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心优势
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      五、 新一代终端开发工具
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、 新一代终端开发工具">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-gemini-cli" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Gemini CLI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-claude-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Claude Code
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Claude Code">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      中国用户配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vscode-dev-containers" class="md-nav__link">
+    <span class="md-ellipsis">
+      六、 统一与隔离：VSCode开发容器 (Dev Containers)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、 统一与隔离：VSCode开发容器 (Dev Containers)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      核心优势
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      工作原理
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="ai">AI 赋能的现代开发工具链<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h1>
+<p>本文旨在汇集一系列前沿的AI辅助开发工具和新一代开发实践，帮助开发者提升效率、优化工作流程。通过本仓库提供的文档和示例，您可以深入了解并掌握这些工具的核心功能和应用场景。</p>
+<p>涵盖了Python环境管理、智能编码辅助、自主AI智能体以及强大的终端开发工具。</p>
+<hr />
+<h2 id="pythonuv">二、 Python的现代化项目管理核心：UV<a class="headerlink" href="#pythonuv" title="Permanent link">&para;</a></h2>
+<p><code>uv</code> 是一个用Rust编写的高性能Python包和项目管理器。它不仅是 <code>pip</code> 的极速替代品，更是一个围绕 <code>pyproject.toml</code> 构建的现代化项目管理工具，旨在提供快速、可靠且易于使用的Python环境和依赖管理。</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/astral-sh/uv">astral-sh/uv</a></li>
+</ul>
+<h3 id="_1">核心优势<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>极致的速度</strong>: 比 <code>pip</code> 和 <code>virtualenv</code> 快10-100倍，极大缩短了等待时间。</li>
+<li><strong>一体化工具</strong>: 单个可执行文件 <code>uv</code> 即可取代 <code>pip</code>, <code>pip-tools</code>, <code>virtualenv</code> 等多个工具。</li>
+<li><strong>现代化的项目管理</strong>: 采用 <code>pyproject.toml</code> (PEP 621) 作为项目依赖的唯一真实来源，通过 <code>uv.lock</code> 文件实现精确、可复现的构建。</li>
+<li><strong>无缝兼容</strong>: 依然支持传统的 <code>requirements.txt</code> 文件，方便从旧项目迁移。</li>
+</ul>
+<h3 id="_2">核心工作流 (推荐)<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>现代Python项目开发的最佳实践是围绕 <code>pyproject.toml</code> 进行管理。</p>
+<ol>
+<li>
+<p><strong>初始化项目 (uv init)</strong>:
+    对于一个新项目，使用 <code>uv init</code> 可以快速生成一个 <code>pyproject.toml</code> 文件和虚拟环境。
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="c1"># 在新项目目录中执行</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a>uv<span class="w"> </span>init
+</code></pre></div></td></tr></table></div></p>
+</li>
+<li>
+<p><strong>创建环境并同步 (uv pip sync)</strong>:
+    在已有 <code>pyproject.toml</code> 的项目中，<code>uv</code> 可以一键创建虚拟环境并安装依赖。
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span>
+<span class="normal"><a href="#__codelineno-1-3">3</a></span>
+<span class="normal"><a href="#__codelineno-1-4">4</a></span>
+<span class="normal"><a href="#__codelineno-1-5">5</a></span>
+<span class="normal"><a href="#__codelineno-1-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="c1"># 创建虚拟环境</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a>uv<span class="w"> </span>venv
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="c1"># 激活环境</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="c1"># 同步依赖</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>uv<span class="w"> </span>pip<span class="w"> </span>sync
+</code></pre></div></td></tr></table></div>
+    <code>uv pip sync</code> 是核心命令，它会读取 <code>pyproject.toml</code> 或 <code>uv.lock</code>，并确保你的虚拟环境与文件中声明的依赖 <strong>完全一致</strong>。它会安装缺失的包，并 <strong>移除</strong> 环境中多余的包。</p>
+<p><strong><code>uv pip sync</code> vs <code>uv sync</code></strong>
+*   <strong><code>uv pip sync</code></strong>: 专注于将 <strong>当前激活的虚拟环境</strong> 与 <code>pyproject.toml</code> 或 <code>uv.lock</code> 中声明的依赖 <strong>精确同步</strong>。它会安装缺失的包，并 <strong>移除</strong> 虚拟环境中任何未在声明文件中列出的包。适用于虚拟环境已存在的情况。
+*   <strong><code>uv sync</code></strong>: 这是一个更高级、更便捷的命令。如果当前目录没有虚拟环境，它会 <strong>自动创建一个</strong>（等同于 <code>uv venv</code>），然后执行 <code>uv pip sync</code> 的功能。适用于新项目快速启动或不确定虚拟环境状态时。简而言之，<code>uv sync</code> = <code>uv venv</code> (如果需要) + <code>uv pip sync</code>。</p>
+</li>
+<li>
+<p><strong>锁定依赖版本</strong>:
+    为了团队协作和生产部署，需要将依赖（包括子依赖）的具体版本锁定下来。
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="c1"># 将 pyproject.toml 编译为锁文件</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>uv<span class="w"> </span>pip<span class="w"> </span>compile<span class="w"> </span>pyproject.toml<span class="w"> </span>--output-file<span class="w"> </span>uv.lock
+</code></pre></div></td></tr></table></div>
+    <code>uv.lock</code> 文件应提交到Git仓库中。</p>
+</li>
+<li>
+<p><strong>在协作中使用锁文件</strong>:
+    其他团队成员或CI/CD流程拿到项目后，只需运行以下命令即可完美复现环境：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>uv<span class="w"> </span>pip<span class="w"> </span>sync<span class="w"> </span>--locked
+</code></pre></div></td></tr></table></div></p>
+</li>
+</ol>
+<hr />
+<h2 id="vscode">三、 VSCode智能编码插件<a class="headerlink" href="#vscode" title="Permanent link">&para;</a></h2>
+<p>本项目将介绍三款强大的AI编码插件：<code>CodeGeex</code>、<code>Lingma</code> 和 <code>Continue</code>。它们为开发者提供智能的代码补全、代码生成、实时答疑等功能。</p>
+<h3 id="1-codegeex">1. CodeGeex<a class="headerlink" href="#1-codegeex" title="Permanent link">&para;</a></h3>
+<p><code>CodeGeex</code> 由智谱AI开发，基于其百亿参数的大模型，支持超过20种编程语言。</p>
+<ul>
+<li>
+<p><strong>GitHub</strong>: <a href="https://github.com/THUDM/CodeGeeX">THUDM/CodeGeeX</a></p>
+</li>
+<li>
+<p><strong>核心功能</strong>:</p>
+<ul>
+<li><strong>代码生成与补全</strong>: 根据自然语言描述或上下文自动生成代码。</li>
+<li><strong>代码翻译</strong>: 在不同编程语言之间进行准确翻译。</li>
+<li><strong>AI聊天机器人</strong>: 在IDE内直接提问，解决编码难题。</li>
+<li><strong>自动添加注释和Bug修复</strong>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-lingma">2. Lingma (通义灵码)<a class="headerlink" href="#2-lingma" title="Permanent link">&para;</a></h3>
+<p><code>Lingma</code> 由阿里云开发，深度集成于IDE，旨在提升编码效率。</p>
+<ul>
+<li><strong>核心功能</strong>:<ul>
+<li><strong>上下文感知代码补全</strong>: 提供行级和函数级的智能建议。</li>
+<li><strong>自然语言生成代码</strong>: 将你的想法直接转换成代码。</li>
+<li><strong>企业级定制</strong>: 支持与企业私有知识库集成，保障代码安全。</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-continue">3. Continue<a class="headerlink" href="#3-continue" title="Permanent link">&para;</a></h3>
+<p><code>Continue</code> 是一个开源的AI代码助手，其最大的特点是高度的可定制性。</p>
+<ul>
+<li>
+<p><strong>GitHub</strong>: <a href="https://github.com/continuedev/continue">continuedev/continue</a></p>
+</li>
+<li>
+<p><strong>核心功能</strong>:</p>
+<ul>
+<li><strong>本地模型支持</strong>: 可以配置使用本地运行的AI模型，保障代码的私密性。</li>
+<li><strong>无缝的代码编辑与聊天体验</strong>。</li>
+</ul>
+</li>
+</ul>
+<h3 id="_3">安装与配置<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>这三款插件均可在VSCode的 <strong>扩展市场</strong> 中搜索并一键安装。安装后，根据插件指引登录或配置即可开始使用。</p>
+<hr />
+<h2 id="vscodecline">四、 VSCode自主智能体：Cline<a class="headerlink" href="#vscodecline" title="Permanent link">&para;</a></h2>
+<p><code>Cline</code> 是一款开源的AI编码助手，它更像一个自主的AI智能体，可以直接在你的IDE中执行任务。</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/cline-bot/cline">cline-bot/cline</a></li>
+</ul>
+<h3 id="_4">核心优势<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>终端集成</strong>: <code>Cline</code> 能够直接执行shell命令，例如安装依赖 (<code>npm install</code>)、运行测试 (<code>npm test</code>) 等。</li>
+<li><strong>文件操作</strong>: 可以根据你的指令创建、编辑文件，并通过diff视图让你确认修改。</li>
+<li><strong>浏览器交互</strong>: 能够与浏览器进行交互，用于测试网页或捕获截图。</li>
+<li><strong>自我修正</strong>: <code>Cline</code> 会监控linter和编译器的错误，并尝试自我修正。</li>
+</ul>
+<p><code>Cline</code> 的引入，将使开发者能够通过自然语言完成更复杂的开发任务，而不仅仅是代码生成。</p>
+<hr />
+<h2 id="_5">五、 新一代终端开发工具<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>命令行是开发者的核心阵地。<code>Gemini CLI</code> 和 <code>Claude Code</code> 这两款工具将AI的强大能力带入了终端。</p>
+<h3 id="1-gemini-cli">1. Gemini CLI<a class="headerlink" href="#1-gemini-cli" title="Permanent link">&para;</a></h3>
+<p>由Google开发，<code>Gemini CLI</code> 让你可以在终端中与Gemini模型直接交互。</p>
+<ul>
+<li>
+<p><strong>GitHub</strong>: <a href="https://github.com/google-gemini/gemini-cli">google-gemini/gemini-cli</a></p>
+</li>
+<li>
+<p><strong>核心功能</strong>:</p>
+<ul>
+<li><strong>代码辅助</strong>: 编写、重构、调试代码，甚至生成单元测试。</li>
+<li><strong>内容生成</strong>: 快速生成Markdown文档、Changelog等。</li>
+<li><strong>Web搜索</strong>: 内置 <code>@search</code> 工具，可以获取实时信息来验证最佳实践。</li>
+</ul>
+</li>
+</ul>
+<p><strong>安装 (需要Node.js):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>npx<span class="w"> </span>https://github.com/google-gemini/gemini-cli
+</code></pre></div></td></tr></table></div></p>
+<h3 id="2-claude-code">2. Claude Code<a class="headerlink" href="#2-claude-code" title="Permanent link">&para;</a></h3>
+<p>由Anthropic开发，<code>Claude Code</code> 是一个具有“代理”能力的编码工具，能深度理解你的代码库。</p>
+<ul>
+<li>
+<p><strong>GitHub</strong>: <a href="https://github.com/anthropics/claude-code">anthropics/claude-code</a></p>
+</li>
+<li>
+<p><strong>核心功能</strong>:</p>
+<ul>
+<li><strong>代码库理解</strong>: 能分析整个项目的结构和逻辑，回答复杂问题。</li>
+<li><strong>Git集成</strong>: 可以使用自然语言搜索git历史、解决合并冲突、创建PR。</li>
+<li><strong>项目定制</strong>: 通过在项目根目录创建 <code>CLAUDE.md</code> 文件，可以为Claude提供项目特定的指令和规范。</li>
+</ul>
+</li>
+</ul>
+<p><strong>安装 (需要Node.js):</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
+</code></pre></div></td></tr></table></div></p>
+<h4 id="_6">中国用户配置<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>对于中国用户，如果直接访问 Anthropic API 存在困难，可以考虑以下配置方式：</p>
+<ol>
+<li>
+<p><strong>Siliconflow <a href="https://cloud.siliconflow.cn/i/1HHkTRkK">注册链接</a></strong></p>
+<ul>
+<li>创建一个账号，并获取 API Key（注册即送14元余额）</li>
+<li>配置环境变量：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
+<span class="normal"><a href="#__codelineno-6-2">2</a></span>
+<span class="normal"><a href="#__codelineno-6-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;https://api.siliconflow.cn/&quot;</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_MODEL</span><span class="o">=</span><span class="s2">&quot;moonshotai/Kimi-K2-Instruct&quot;</span><span class="w">    </span><span class="c1"># 可以自行修改所需模型，目前仅支持非思考模型</span>
+<a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s2">&quot;YOUR_SILICONCLOUD_API_KEY&quot;</span><span class="w">    </span><span class="c1"># 请替换 API Key</span>
+</code></pre></div></td></tr></table></div></li>
+<li>启动 <code>claude code</code>：
+    ```bash
+    cd your-project-folder
+    claude</li>
+</ul>
+</li>
+<li>
+<p><strong>使用国内中转代理：<a href="https://anyrouter.top/register?aff=tKnP">anyrouter</a></strong></p>
+<ul>
+<li>注册账号，申请 API Key</li>
+<li>配置环境变量：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_AUTH_TOKEN</span><span class="o">=</span>sk-...
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span>https://anyrouter.top
+</code></pre></div></td></tr></table></div></li>
+<li>启动 <code>claude code</code>：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
+<span class="normal"><a href="#__codelineno-8-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="nb">cd</span><span class="w"> </span>your-project-folder
+<a id="__codelineno-8-2" name="__codelineno-8-2"></a>claude
+</code></pre></div></td></tr></table></div></li>
+</ul>
+</li>
+<li>
+<p><strong>使用兼容 Anthropic 的最新模型 <a href="https://platform.moonshot.cn/console/api-key">Kimi2</a></strong></p>
+<ul>
+<li>注册账号，申请 API Key</li>
+<li>建议充值50元解除 TPM 限制</li>
+<li>配置环境变量：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
+<span class="normal"><a href="#__codelineno-9-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_AUTH_TOKEN</span><span class="o">=</span>sk-...
+<a id="__codelineno-9-2" name="__codelineno-9-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_BASE_URL</span><span class="o">=</span><span class="s2">&quot;https://api.moonshot.cn/anthropic&quot;</span>
+</code></pre></div></td></tr></table></div></li>
+<li>启动 <code>claude code</code>：
+    <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nb">cd</span><span class="w"> </span>your-project-folder
+<a id="__codelineno-10-2" name="__codelineno-10-2"></a>claude
+</code></pre></div></td></tr></table></div></li>
+</ul>
+</li>
+<li>
+<p><strong>使用开源项目 <a href="https://github.com/musistudio/claude-code-router">claude-code-router</a></strong></p>
+<ul>
+<li>请参考项目文档进行部署和配置</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h2 id="vscode-dev-containers">六、 统一与隔离：VSCode开发容器 (Dev Containers)<a class="headerlink" href="#vscode-dev-containers" title="Permanent link">&para;</a></h2>
+<p><code>Dev Containers</code> 是VSCode的一项革命性功能，它允许你将整个开发环境打包到一个Docker容器中。这解决了团队开发中最经典的痛点：“在我的电脑上是好的呀！”</p>
+<ul>
+<li><strong>GitHub</strong>: <a href="https://github.com/microsoft/vscode-dev-containers">microsoft/vscode-dev-containers</a> (核心仓库)</li>
+</ul>
+<h3 id="_7">核心优势<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>环境一致性</strong>: 所有团队成员，无论使用macOS, Windows还是Linux，都在一个完全相同的、预配置好的环境中进行开发、调试和测试。</li>
+<li><strong>快速上手</strong>: 新成员无需花费数小时配置本地环境，只需打开项目，VSCode就会自动在容器中配置好一切。</li>
+<li><strong>隔离性</strong>: 项目的工具、依赖和配置与你的本地计算机完全隔离，避免了版本冲突和环境污染。</li>
+<li><strong>可复现性</strong>: 整个开发环境由代码 (<code>devcontainer.json</code>, <code>Dockerfile</code>) 定义，可以像项目代码一样被版本控制。</li>
+</ul>
+<h3 id="_8">工作原理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li>项目根目录下有一个 <code>.devcontainer</code> 文件夹。</li>
+<li>其中核心文件是 <code>devcontainer.json</code>，它告诉VSCode如何构建或拉取一个Docker镜像。</li>
+<li>你可以在其中定义项目所需的操作系统、运行时 (如Node.js, Python)、VSCode插件、环境变量，甚至可以在容器构建后自动执行命令（如 <code>npm install</code>）。</li>
+<li>当你用VSCode打开一个带有Dev Container配置的项目时，它会提示你在容器中重新打开。之后，你的VSCode就完全运行在那个容器环境里了。</li>
+</ol>
+<p><strong>开始探索，享受高效编码的乐趣吧！</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../uv_tutorial/" class="md-footer__link md-footer__link--prev" aria-label="Previous: UV 教程">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                UV 教程
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/LiuCH4NG" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "toc.integrate", "navigation.top", "navigation.footer", "navigation.expand", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
