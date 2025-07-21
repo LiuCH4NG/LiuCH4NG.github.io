@@ -1,5 +1,4 @@
-site_name: LiuCH4NG的博客
-
+site_name: 📒学习笔记
 theme:
   name: material
   features:
@@ -37,9 +36,12 @@ theme:
 
 nav:
   - Home: index.md
-  - 技术:
+  - 效率工具:
+    - Ruff 教程: tech/ruff_tutorial.md
     - UV 教程: tech/uv_tutorial.md
     - 现代开发常用的AI工具: tech/AI_tools.md
+  - LLM 相关: 
+    - 使用EvalScope对大模型评估: llm/evalscope_tutorial.md
   # 更多页面可以在这里添加
 
 markdown_extensions:

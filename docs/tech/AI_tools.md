@@ -173,19 +173,38 @@ npm install -g @anthropic-ai/claude-code
         cd your-project-folder
         claude
         
+2.  **使用国内中转代理**
 
-2.  **使用国内中转代理：[anyrouter](https://anyrouter.top/register?aff=tKnP)**
-    *   注册账号，申请 API Key
-    *   配置环境变量：
-        ```bash
-        export ANTHROPIC_AUTH_TOKEN=sk-...
-        export ANTHROPIC_BASE_URL=https://anyrouter.top
-        ```
-    *   启动 `claude code`：
-        ```bash
-        cd your-project-folder
-        claude
-        ```
+    1. **[aicodemirror](https://www.aicodemirror.com/register?invitecode=8N93IF)**
+        *   注册账号，申请 API Key
+        *   配置环境变量：
+            ```bash
+            macOS / Windows WSL / Linux
+
+            export ANTHROPIC_BASE_URL=https://api.aicodemirror.com/api/claudecode
+            export ANTHROPIC_API_KEY=你的密钥
+            export ANTHROPIC_AUTH_TOKEN=""
+            ```
+            ```powershell
+            Windows 原生
+
+            $env:ANTHROPIC_BASE_URL="https://api.aicodemirror.com/api/claudecode"
+            $env:ANTHROPIC_API_KEY=你的密钥
+            $env:ANTHROPIC_AUTH_TOKEN=你的密钥
+            ```
+
+    2. **[anyrouter](https://anyrouter.top/register?aff=tKnP)**
+        *   注册账号，申请 API Key
+        *   配置环境变量：
+            ```bash
+            export ANTHROPIC_AUTH_TOKEN=sk-...
+            export ANTHROPIC_BASE_URL=https://anyrouter.top
+            ```
+        *   启动 `claude code`：
+            ```bash
+            cd your-project-folder
+            claude
+            ```
 
 3.  **使用兼容 Anthropic 的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)**
     *   注册账号，申请 API Key
