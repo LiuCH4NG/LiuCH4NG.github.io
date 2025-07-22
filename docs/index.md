@@ -11,6 +11,7 @@
 ## 📝 最新文章
 
 ### 📚 技术教程
+- [**ComfyUI 使用 GGUF量化模型教程**](llm/ComfyUI使用GGUF量化模型教程.md) - 详细介绍如何在ComfyUI中使用GGUF量化模型进行AI绘画
 - [**AI 赋能的现代开发工具链**](tech/AI_tools.md) - 介绍如何利用AI工具和工具链，实现现代开发工具链
 - [**UV教程：Python包管理的新选择**](tech/uv_tutorial.md) - 探索UV工具如何重新定义Python包管理体验
 
