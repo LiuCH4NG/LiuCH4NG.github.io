@@ -41,6 +41,7 @@ nav:
     - UV 教程: tech/uv_tutorial.md
     - 现代开发常用的AI工具: tech/AI_tools.md
   - LLM 相关: 
+    - Qwen3-Coder 中文教程: llm/qwen3_coder_tutorial.md
     - 使用EvalScope对大模型评估: llm/evalscope_tutorial.md
     - ComfyUI 使用 GGUF量化模型教程: llm/ComfyUI使用GGUF量化模型教程.md
   # 更多页面可以在这里添加
