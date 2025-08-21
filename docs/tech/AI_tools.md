@@ -156,6 +156,19 @@ npx https://github.com/google-gemini/gemini-cli
 npm install -g @anthropic-ai/claude-code
 ```
 
+### 3. Qwen Code
+
+由 Qwen 开发，`Qwen Code` 可以免费调用Qwen coder 模型
+*  **GitHub**: [Qwen-Code](https://github.com/QwenLM/qwen-code)
+
+*   **核心优势**:
+    *   **免费**: 每日 2,000 次请求，无令牌限制，中国大陆：ModelScope 提供 每日 2,000 次免费 API 调用
+
+**安装 (需要Node.js):**
+```bash
+npm install -g @qwen-code/qwen-code@latest
+```
+
 #### 中国用户配置
 
 对于中国用户，如果直接访问 Anthropic API 存在困难，可以考虑以下配置方式：
@@ -173,40 +186,53 @@ npm install -g @anthropic-ai/claude-code
         cd your-project-folder
         claude
         
+
 2.  **使用国内中转代理**
-
     1. **[aicodemirror](https://www.aicodemirror.com/register?invitecode=8N93IF)**
-        *   注册账号，申请 API Key
-        *   配置环境变量：
-            ```bash
-            macOS / Windows WSL / Linux
+    *   注册账号，申请 API Key
+    *   配置环境变量：
+        ```bash
+        macOS / Windows WSL / Linux
 
-            export ANTHROPIC_BASE_URL=https://api.aicodemirror.com/api/claudecode
-            export ANTHROPIC_API_KEY=你的密钥
-            export ANTHROPIC_AUTH_TOKEN=""
-            ```
-            ```powershell
-            Windows 原生
+        export ANTHROPIC_BASE_URL=https://api.aicodemirror.com/api/claudecode
+        export ANTHROPIC_API_KEY=你的密钥
+        export ANTHROPIC_AUTH_TOKEN=""
+        ```
+        ```powershell
+        Windows 原生
 
-            $env:ANTHROPIC_BASE_URL="https://api.aicodemirror.com/api/claudecode"
-            $env:ANTHROPIC_API_KEY=你的密钥
-            $env:ANTHROPIC_AUTH_TOKEN=你的密钥
-            ```
+        $env:ANTHROPIC_BASE_URL="https://api.aicodemirror.com/api/claudecode"
+        $env:ANTHROPIC_API_KEY=你的密钥
+        $env:ANTHROPIC_AUTH_TOKEN=你的密钥
+        ```
 
     2. **[anyrouter](https://anyrouter.top/register?aff=tKnP)**
-        *   注册账号，申请 API Key
-        *   配置环境变量：
-            ```bash
-            export ANTHROPIC_AUTH_TOKEN=sk-...
-            export ANTHROPIC_BASE_URL=https://anyrouter.top
-            ```
-        *   启动 `claude code`：
-            ```bash
-            cd your-project-folder
-            claude
-            ```
+    *   注册账号，申请 API Key
+    *   配置环境变量：
+        ```bash
+        export ANTHROPIC_AUTH_TOKEN=sk-...
+        export ANTHROPIC_BASE_URL=https://anyrouter.top
+        ```
+    *   启动 `claude code`：
+        ```bash
+        cd your-project-folder
+        claude
+        ```
 
-3.  **使用兼容 Anthropic 的最新模型 [Kimi2](https://platform.moonshot.cn/console/api-key)**
+3.  使用兼容 Anthropic 的最新模型  
+    [ModelScope（推荐）](https://www.modelscope.cn/my/myaccesstoken)
+    *   免费每天可调用2000次
+    *   配置环境变量：
+        ```bash
+        #务必去掉开头的ms-前缀
+        export ANTHROPIC_API_KEY=sk-...
+        export ANTHROPIC_BASE_URL="https://api-inference.modelscope.cn"
+        export ANTHROPIC_MODEL=Qwen/Qwen3-Coder-480B-A35B-Instruct
+        # 默认配置的是 Qwen3-Coder，也可换成GLM-4.5等其他模型
+        ```
+
+
+    [Kimi2](https://platform.moonshot.cn/console/api-key)
     *   注册账号，申请 API Key
     *   建议充值50元解除 TPM 限制
     *   配置环境变量：
@@ -219,6 +245,7 @@ npm install -g @anthropic-ai/claude-code
         cd your-project-folder
         claude
         ```
+    [GLM4.5系列](https://www.bigmodel.cn/invite?icode=hAQMFs%2BuYIlK%2BYtwOwIbQHHEaazDlIZGj9HxftzTbt4%3D)
 
 4.  **使用开源项目 [claude-code-router](https://github.com/musistudio/claude-code-router)**
     *   请参考项目文档进行部署和配置
@@ -246,5 +273,14 @@ npm install -g @anthropic-ai/claude-code
 3.  你可以在其中定义项目所需的操作系统、运行时 (如Node.js, Python)、VSCode插件、环境变量，甚至可以在容器构建后自动执行命令（如 `npm install`）。
 4.  当你用VSCode打开一个带有Dev Container配置的项目时，它会提示你在容器中重新打开。之后，你的VSCode就完全运行在那个容器环境里了。
 
+---
 
-**开始探索，享受高效编码的乐趣吧！**
+## 七、 总结与展望
+
+本项目所介绍的工具，从环境管理、编码辅助到终端交互，覆盖了日常开发的主要环节。
+
+*   **UV** 将统一并加速Python环境管理。
+*   **CodeGeex, Lingma, Continue** 将成为编码时的智能伙伴。
+*   **Cline** 将在VSCode中执行更复杂的自动化任务。
+*   **Gemini CLI, Claude Code** 则让终端变得前所未有的智能。
+*   **Dev Containers** 确保开发环境的一致性和可复现性。
