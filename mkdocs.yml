@@ -1,4 +1,7 @@
 site_name: 📒学习笔记
+site_url: https://liuch4ng.github.io/
+repo_url: https://github.com/LiuCH4NG/LiuCH4NG.github.io
+edit_uri: edit/main/docs/
 theme:
   name: material
   features:
