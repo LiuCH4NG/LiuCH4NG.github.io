@@ -220,7 +220,7 @@ npm install -g @qwen-code/qwen-code@latest
         ```
 
 3.  使用兼容 Anthropic 的最新模型  
-    [ModelScope（推荐）](https://www.modelscope.cn/my/myaccesstoken)
+    [ModelScope（推荐）](https://www.modelscope.cn/my/myaccesstoken)  
     *   免费每天可调用2000次
     *   配置环境变量：
         ```bash
@@ -231,8 +231,17 @@ npm install -g @qwen-code/qwen-code@latest
         # 默认配置的是 Qwen3-Coder，也可换成GLM-4.5等其他模型
         ```
 
+    [DeepSeek V3.1](https://api-docs.deepseek.com/zh-cn/guides/anthropic_api)  
+    *   配置环境变量：
+        ```bash
+        export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
+        export ANTHROPIC_AUTH_TOKEN=${DEEPSEEK_API_KEY}
+        export ANTHROPIC_MODEL=deepseek-chat
+        export ANTHROPIC_SMALL_FAST_MODEL=deepseek-chat
+        ```
 
-    [Kimi2](https://platform.moonshot.cn/console/api-key)
+
+    [Kimi2](https://platform.moonshot.cn/console/api-key)  
     *   注册账号，申请 API Key
     *   建议充值50元解除 TPM 限制
     *   配置环境变量：
