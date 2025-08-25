@@ -11,6 +11,7 @@
 ## 📝 最新文章
 
 ### 📚 技术教程
+- [**优秀API设计准则**](tech/优秀API设计.md) - 学习如何设计健壮、易用且面向未来的API。
 - [**新一代代码大模型 Qwen3-Coder 中文使用教程**](llm/qwen3_coder_tutorial.md) - 学习如何使用和集成强大的 Qwen3-Coder 代码智能体。
 - [**ComfyUI 使用 GGUF量化模型教程**](llm/ComfyUI使用GGUF量化模型教程.md) - 详细介绍如何在ComfyUI中使用GGUF量化模型进行AI绘画
 - [**AI 赋能的现代开发工具链**](tech/AI_tools.md) - 介绍如何利用AI工具和工具链，实现现代开发工具链

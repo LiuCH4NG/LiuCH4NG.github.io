@@ -40,6 +40,7 @@ theme:
 nav:
   - Home: index.md
   - 效率工具:
+    - 优秀API设计: tech/优秀API设计.md
     - Ruff 教程: tech/ruff_tutorial.md
     - UV 教程: tech/uv_tutorial.md
     - 现代开发常用的AI工具: tech/AI_tools.md
