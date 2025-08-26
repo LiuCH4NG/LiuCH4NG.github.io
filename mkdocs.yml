@@ -40,10 +40,10 @@ theme:
 nav:
   - Home: index.md
   - 效率工具:
+    - 现代开发常用的AI工具: tech/AI_tools.md
     - 优秀API设计: tech/优秀API设计.md
     - Ruff 教程: tech/ruff_tutorial.md
     - UV 教程: tech/uv_tutorial.md
-    - 现代开发常用的AI工具: tech/AI_tools.md
   - LLM 相关: 
     - Qwen3-Coder 中文教程: llm/qwen3_coder_tutorial.md
     - 使用EvalScope对大模型评估: llm/evalscope_tutorial.md

@@ -185,6 +185,7 @@ npm install -g @qwen-code/qwen-code@latest
         ```bash
         cd your-project-folder
         claude
+        ```
         
 
 2.  **使用国内中转代理**
@@ -231,7 +232,8 @@ npm install -g @qwen-code/qwen-code@latest
         # 默认配置的是 Qwen3-Coder，也可换成GLM-4.5等其他模型
         ```
 
-    [DeepSeek V3.1](https://api-docs.deepseek.com/zh-cn/guides/anthropic_api)  
+    [DeepSeek V3.1](https://api-docs.deepseek.com/zh-cn/guides/anthropic_api)
+
     *   配置环境变量：
         ```bash
         export ANTHROPIC_BASE_URL=https://api.deepseek.com/anthropic
@@ -242,6 +244,7 @@ npm install -g @qwen-code/qwen-code@latest
 
 
     [Kimi2](https://platform.moonshot.cn/console/api-key)  
+    
     *   注册账号，申请 API Key
     *   建议充值50元解除 TPM 限制
     *   配置环境变量：
