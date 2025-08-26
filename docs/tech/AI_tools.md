@@ -244,7 +244,7 @@ npm install -g @qwen-code/qwen-code@latest
 
 
     [Kimi2](https://platform.moonshot.cn/console/api-key)  
-    
+
     *   注册账号，申请 API Key
     *   建议充值50元解除 TPM 限制
     *   配置环境变量：
@@ -257,6 +257,7 @@ npm install -g @qwen-code/qwen-code@latest
         cd your-project-folder
         claude
         ```
+        
     [GLM4.5系列](https://www.bigmodel.cn/invite?icode=hAQMFs%2BuYIlK%2BYtwOwIbQHHEaazDlIZGj9HxftzTbt4%3D)
 
 4.  **使用开源项目 [claude-code-router](https://github.com/musistudio/claude-code-router)**

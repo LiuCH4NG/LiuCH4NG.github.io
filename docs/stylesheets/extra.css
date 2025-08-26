@@ -247,22 +247,39 @@
 .md-search__input {
     background: transparent;
     border-radius: 20px;
-    color: white;
+    color: rgba(0, 0, 0, 0.87);
     font-weight: 500;
 }
 
+[data-md-color-scheme="dark"] .md-search__input {
+    color: white;
+}
+
 .md-search__input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.54);
     font-weight: 400;
 }
 
+[data-md-color-scheme="dark"] .md-search__input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .md-search__input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(0, 0, 0, 0.87);
+}
+
+[data-md-color-scheme="dark"] .md-search__input:focus {
     background: rgba(255, 255, 255, 0.15);
     color: white;
 }
 
 /* 搜索图标增强 */
 .md-search__icon {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+[data-md-color-scheme="dark"] .md-search__icon {
     color: rgba(255, 255, 255, 0.9);
 }
 
