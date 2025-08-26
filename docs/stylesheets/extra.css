@@ -1,0 +1,130 @@
+/* 主页美化样式 */
+
+/* Hero 区域样式 */
+.hero-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.1) 0%, rgba(103, 58, 183, 0.1) 100%);
+    border-radius: 12px;
+    margin: 1rem 0 2rem 0;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+/* 关于我网格布局 */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+/* 文章卡片样式 */
+.article-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.article-cards .admonition {
+    border-left: 4px solid var(--md-primary-fg-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.article-cards .admonition:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 技术领域布局 */
+.tech-domains {
+    margin: 2rem 0;
+}
+
+.tech-domains h3 {
+    color: var(--md-primary-fg-color);
+    border-bottom: 2px solid var(--md-primary-fg-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* 底部引用样式 */
+.footer-quote {
+    text-align: center;
+    margin: 3rem 0 2rem 0;
+}
+
+.footer-quote .admonition {
+    border: none;
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.05) 0%, rgba(103, 58, 183, 0.05) 100%);
+    border-radius: 12px;
+}
+
+/* 按钮样式增强 */
+.md-button {
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.md-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        padding: 1.5rem 1rem;
+        margin: 0.5rem 0 1.5rem 0;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .article-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Admonition 样式优化 */
+.admonition {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admonition.info {
+    border-left-color: #2196f3;
+}
+
+.admonition.tip {
+    border-left-color: #4caf50;
+}
+
+.admonition.note {
+    border-left-color: #ff9800;
+}
+
+.admonition.example {
+    border-left-color: #9c27b0;
+}
+
+.admonition.quote {
+    border-left-color: #607d8b;
+}
+
+/* Mermaid 图表样式 */
+.mermaid {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+/* 分隔线样式 */
+hr {
+    margin: 2.5rem 0;
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--md-default-fg-color--lighter), transparent);
+}

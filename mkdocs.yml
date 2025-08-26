@@ -83,3 +83,6 @@ extra:
     - icon: fontawesome/brands/github
       link: https://github.com/LiuCH4NG
   author: LiuCH4NG
+
+extra_css:
+  - stylesheets/extra.css

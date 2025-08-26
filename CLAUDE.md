@@ -15,6 +15,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **构建输出**: `site/` 目录包含生成的静态文件
 - **部署**: 使用 GitHub Pages 进行自动部署
 
+### 项目结构
+```
+blog/
+├── docs/                    # 文档源码目录
+│   ├── index.md            # 首页
+│   ├── tech/               # 效率工具教程
+│   └── llm/                # 大语言模型教程
+├── mkdocs.yml              # MkDocs 配置文件
+├── pyproject.toml          # Python 项目配置
+├── .github/workflows/      # GitHub Actions 工作流
+├── site/                   # 构建输出目录（自动生成）
+├── Dockerfile              # Docker 镜像配置
+└── docker-compose.yml      # Docker Compose 配置
+```
+
+### 依赖管理
+- 使用 `uv` 作为 Python 包管理器
+- 主要依赖: `mkdocs`, `mkdocs-material`
+- Python 版本要求: >=3.12
+
 ## Common Commands
 
 ### 环境设置
@@ -22,34 +42,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 # 创建虚拟环境
 uv venv
 
-# 安装依赖
-/Users/liuchang/work/learn/blog/.venv/bin/python -m uv pip install mkdocs mkdocs-material
+# 激活虚拟环境并安装依赖
+source .venv/bin/activate
+uv pip install mkdocs mkdocs-material
+
+# 或者直接使用 uv 运行命令（推荐）
+uv run mkdocs serve
 ```
 
 ### 本地开发
 ```bash
-# 启动开发服务器
-/Users/liuchang/work/learn/blog/.venv/bin/python -m mkdocs serve
+# 启动开发服务器（使用 uv，推荐）
+uv run mkdocs serve
+
+# 或者使用虚拟环境路径
+.venv/bin/python -m mkdocs serve
 ```
 访问 `http://127.0.0.1:8000` 查看预览
 
 ### 构建和部署
 ```bash
 # 构建静态站点
-/Users/liuchang/work/learn/blog/.venv/bin/python -m mkdocs build
+uv run mkdocs build
+# 或 .venv/bin/python -m mkdocs build
 
 # 本地预览构建结果
 python -m http.server 8000 -d site
 # 访问 http://localhost:8000
 
-# 使用 Docker Compose 部署（可选）
+# 上传到服务器（需要配置 SSH）
+./upload_web.sh
+```
+
+### Docker 部署（可选）
+```bash
+# 使用 Docker Compose 部署
 docker-compose up -d
 
 # 停止 Docker 服务
 docker-compose down
-
-# 上传到服务器（需要配置 SSH，可选）
-./upload_web.sh
 ```
 
 ### GitHub Pages 部署
@@ -64,27 +95,31 @@ docker-compose down
 2. 选择 "Deploy to GitHub Pages" 工作流
 3. 点击 "Run workflow" 手动触发（如需要）
 
-## Content Structure
-
-文档按以下结构组织：
-- `docs/index.md`: 首页
-- `docs/tech/`: 效率工具相关教程
-- `docs/llm/`: 大语言模型相关教程
-
-添加新文章时，需要在 `mkdocs.yml` 的 `nav` 部分添加相应的导航链接。
-
 ## Configuration Notes
 
-- 主题使用 Material for MkDocs，支持明暗主题切换
-- 配置了代码高亮、搜索功能、导航标签等功能
-- 使用 Roboto 字体和 JetBrains Mono 等宽字体
-- 包含社交链接（GitHub）和作者信息
-- 已配置 GitHub Pages 自动部署
+### MkDocs 配置 (`mkdocs.yml`)
+- **主题**: Material for MkDocs，支持明暗主题自动切换
+- **功能特性**: 导航标签、搜索高亮、代码复制、TOC 集成
+- **字体**: Roboto (正文) + JetBrains Mono (代码)
+- **Markdown 扩展**: 支持代码高亮、警告框、表格、任务列表、Mermaid 图表等
+
+### GitHub Pages 部署
+- **自动触发**: 推送到 main 分支或 PR 到 main 分支
+- **访问地址**: https://liuch4ng.github.io/
+- **工作流**: `.github/workflows/deploy.yml` 使用 Python 3.12 环境
+- **部署策略**: 构建后将 site/ 内容复制到根目录部署
+
+### 内容管理
+添加新文章的步骤：
+1. 在相应目录下创建 `.md` 文件 (`docs/tech/` 或 `docs/llm/`)
+2. 在 `mkdocs.yml` 的 `nav` 部分添加导航链接
+3. 本地预览确认效果
+4. 推送到 main 分支触发自动部署
 
 ## Development Workflow
 
-1. 在 `docs/` 目录下创建或编辑 Markdown 文件
-2. 更新 `mkdocs.yml` 中的导航结构（如需要）
-3. 本地预览：`mkdocs serve`
-4. 构建站点：`mkdocs build`
-5. 推送到 main 分支触发自动部署到 GitHub Pages
+1. 编辑或创建 Markdown 文件：`docs/tech/` 或 `docs/llm/`
+2. 更新导航配置：在 `mkdocs.yml` 的 `nav` 部分添加新文章链接
+3. 本地预览：`uv run mkdocs serve`
+4. 构建验证：`uv run mkdocs build`
+5. 提交推送：推送到 main 分支触发 GitHub Pages 自动部署
