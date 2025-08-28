@@ -158,11 +158,12 @@ npm install -g @anthropic-ai/claude-code
 
 ### 3. Qwen Code
 
-由 Qwen 开发，`Qwen Code` 可以免费调用Qwen coder 模型
-*  **GitHub**: [Qwen-Code](https://github.com/QwenLM/qwen-code)
+由 Qwen 开发，`Qwen Code` 可以免费调用Qwen coder 模型  
 
-*   **核心优势**:
-    *   **免费**: 每日 2,000 次请求，无令牌限制，中国大陆：ModelScope 提供 每日 2,000 次免费 API 调用
+*   GitHub: [Qwen-Code](https://github.com/QwenLM/qwen-code)
+
+-   **核心优势**:
+    -  **免费**: 每日 2,000 次请求，无令牌限制，中国大陆：ModelScope 提供 每日 2,000 次免费 API 调用
 
 **安装 (需要Node.js):**
 ```bash
@@ -190,37 +191,37 @@ npm install -g @qwen-code/qwen-code@latest
 
 2.  **使用国内中转代理**
     1. **[aicodemirror](https://www.aicodemirror.com/register?invitecode=8N93IF)**
-    *   注册账号，申请 API Key
-    *   配置环境变量：
-        ```bash
-        macOS / Windows WSL / Linux
+        *   注册账号，申请 API Key
+        *   配置环境变量：
+            ```bash
+            macOS / Windows WSL / Linux
 
-        export ANTHROPIC_BASE_URL=https://api.aicodemirror.com/api/claudecode
-        export ANTHROPIC_API_KEY=你的密钥
-        export ANTHROPIC_AUTH_TOKEN=""
-        ```
-        ```powershell
-        Windows 原生
+            export ANTHROPIC_BASE_URL=https://api.aicodemirror.com/api/claudecode
+            export ANTHROPIC_API_KEY=你的密钥
+            export ANTHROPIC_AUTH_TOKEN=""
+            ```
+            ```powershell
+            Windows 原生
 
-        $env:ANTHROPIC_BASE_URL="https://api.aicodemirror.com/api/claudecode"
-        $env:ANTHROPIC_API_KEY=你的密钥
-        $env:ANTHROPIC_AUTH_TOKEN=你的密钥
-        ```
+            $env:ANTHROPIC_BASE_URL="https://api.aicodemirror.com/api/claudecode"
+            $env:ANTHROPIC_API_KEY=你的密钥
+            $env:ANTHROPIC_AUTH_TOKEN=你的密钥
+            ```
 
     2. **[anyrouter](https://anyrouter.top/register?aff=tKnP)**
-    *   注册账号，申请 API Key
-    *   配置环境变量：
-        ```bash
-        export ANTHROPIC_AUTH_TOKEN=sk-...
-        export ANTHROPIC_BASE_URL=https://anyrouter.top
-        ```
-    *   启动 `claude code`：
-        ```bash
-        cd your-project-folder
-        claude
-        ```
+        *   注册账号，申请 API Key
+        *   配置环境变量：
+            ```bash
+            export ANTHROPIC_AUTH_TOKEN=sk-...
+            export ANTHROPIC_BASE_URL=https://anyrouter.top
+            ```
+        *   启动 `claude code`：
+            ```bash
+            cd your-project-folder
+            claude
+            ```
 
-3.  使用兼容 Anthropic 的最新模型  
+3.  **使用兼容 Anthropic 的最新模型**  
     [ModelScope（推荐）](https://www.modelscope.cn/my/myaccesstoken)  
     *   免费每天可调用2000次
     *   配置环境变量：
