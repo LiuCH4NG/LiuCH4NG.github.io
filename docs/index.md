@@ -66,6 +66,14 @@
 
 </div>
 
+
+### 🚀 开源项目
+
+<div class="article-cards" markdown="1">
+
+[![athlete_player_ai_manager](https://github-readme-stats.vercel.app/api/pin/?username=liuch4ng&repo=athlete_player_ai_manager)](https://github.com/liuch4ng/athlete_player_ai_manager)
+
+</div>
 ---
 
 ## 🎯 技术领域
