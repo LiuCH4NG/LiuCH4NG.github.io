@@ -195,6 +195,36 @@
     margin: 1.5rem 0;
 }
 
+/* GitHub 项目卡片样式优化 */
+.article-cards img[src*="github-readme-stats"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(84, 110, 122, 0.2);
+    background: var(--md-default-bg-color);
+}
+
+.article-cards img[src*="github-readme-stats"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* GitHub 项目链接容器 */
+.article-cards a[href*="github.com"] {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.article-cards a[href*="github.com"]:hover {
+    transform: scale(1.02);
+}
+
 .article-cards .admonition {
     border-left: 4px solid var(--md-primary-fg-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
