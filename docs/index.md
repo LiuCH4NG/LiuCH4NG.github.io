@@ -73,6 +73,8 @@
 
 [![athlete_player_ai_manager](https://github-readme-stats.vercel.app/api/pin/?username=liuch4ng&repo=athlete_player_ai_manager)](https://github.com/liuch4ng/athlete_player_ai_manager)
 
+[![RAGFlow 文件批量上传工具](https://github-readme-stats.vercel.app/api/pin/?username=liuch4ng&repo=ragflow-upload)](https://github.com/liuch4ng/ragflow-upload)
+
 </div>
 ---
 
