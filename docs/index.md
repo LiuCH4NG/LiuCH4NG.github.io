@@ -1,4 +1,4 @@
-# 欢迎来到我的技术博客 👋
+# 欢迎来到我的技术博客
 
 <div class="hero-section" markdown="1">
 
@@ -22,6 +22,19 @@
 
 !!! note "🎯 技术栈"
     LangGraph、Transformer、Python、Qt、Go
+
+</div>
+
+---
+
+<div class="github-stats" markdown="1">
+
+
+<img src="https://github.com/LiuCH4NG/github-stats/raw/master/generated/overview.svg#gh-light-mode-only" alt="GitHub Stats Overview" />
+<img src="https://github.com/LiuCH4NG/github-stats/raw/master/generated/overview.svg#gh-dark-mode-only" alt="GitHub Stats Overview" />
+<img src="https://github.com/LiuCH4NG/github-stats/raw/master/generated/languages.svg#gh-light-mode-only" alt="GitHub Top Languages" />
+<img src="https://github.com/LiuCH4NG/github-stats/raw/master/generated/languages.svg#gh-dark-mode-only" alt="GitHub Top Languages" />
+
 
 </div>
 
