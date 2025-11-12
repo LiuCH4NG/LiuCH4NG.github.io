@@ -46,6 +46,7 @@ nav:
     - 🦀 Ruff 教程: tech/ruff_tutorial.md
     - 📦 UV 教程: tech/uv_tutorial.md
     - 🐍 Python高效打包工具: tech/pyfuze.md
+    - 🧠 Mem0 原理解析: tech/Mem0原理解析.md
   - 🧠 LLM 相关: 
     - 💻 Qwen3-Coder 中文教程: llm/qwen3_coder_tutorial.md
     - 📊 使用EvalScope对大模型评估: llm/evalscope_tutorial.md
