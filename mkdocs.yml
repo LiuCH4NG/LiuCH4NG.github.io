@@ -42,7 +42,6 @@ nav:
   - 首页: index.md
   - 模型评测与发布:
     - "Claude Opus 4.7 深夜发布：代码能力暴涨 13%，价格却一分没涨": models/claudeopus4.7.md
-    - "DeepSeek-V4 预览版：迈入百万上下文普惠时代": models/deepseekv4.md
     - "DeepSeek-V4-Pro vs GLM-5.1 双雄对决": models/deepseekvsglm.md
     - "Gemini 3.5 Flash 发布解读": models/gemini3.5-flash.md
     - "阿里千问最强智能体模型 Qwen3.7-Max 发布解读": models/qwen3.7max.md
