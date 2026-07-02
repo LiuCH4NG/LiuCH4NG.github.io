@@ -20,13 +20,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 blog/
 ├── docs/                    # 文档源码目录
 │   ├── index.md            # 首页
-│   ├── tech/               # 效率工具教程
-│   ├── llm/                # 大语言模型教程
 │   ├── models/             # 模型评测与发布（公众号文章）
 │   ├── ai-coding/          # AI 编程工具（公众号文章）
 │   ├── agent/              # Agent 与智能体架构（公众号文章）
 │   ├── products/           # AI 产品动态（公众号文章）
 │   ├── prompt-eng/         # 提示词与工程化（公众号文章）
+│   ├── software-eng/       # 软件工程（工程方法论）
 │   ├── thinking/           # 管理与应用思考（公众号文章）
 │   ├── tools/              # 工具与效率（公众号文章）
 │   └── assets/
@@ -122,13 +121,12 @@ docker-compose down
 ### 内容管理
 添加新文章的步骤：
 1. 在相应目录下创建 `.md` 文件：
-   - 效率工具教程：`docs/tech/`
-   - 大语言模型教程：`docs/llm/`
    - 模型评测与发布：`docs/models/`
    - AI 编程工具：`docs/ai-coding/`
    - Agent 与智能体架构：`docs/agent/`
    - AI 产品动态：`docs/products/`
    - 提示词与工程化：`docs/prompt-eng/`
+   - 软件工程：`docs/software-eng/`
    - 管理与应用思考：`docs/thinking/`
    - 工具与效率：`docs/tools/`
 2. 如果文章含图片，将图片放在 `docs/assets/wechat/<slug>/`，正文用相对路径引用：`![描述](../assets/wechat/<slug>/image.png)`
@@ -147,7 +145,7 @@ docker-compose down
 
 ## Development Workflow
 
-1. 编辑或创建 Markdown 文件：放入对应主题目录（`docs/tech/`、`docs/llm/`、`docs/models/`、`docs/ai-coding/`、`docs/agent/`、`docs/products/`、`docs/prompt-eng/`、`docs/thinking/`、`docs/tools/`）
+1. 编辑或创建 Markdown 文件：放入对应主题目录（`docs/models/`、`docs/ai-coding/`、`docs/agent/`、`docs/products/`、`docs/prompt-eng/`、`docs/software-eng/`、`docs/thinking/`、`docs/tools/`）
 2. 更新导航配置：在 `mkdocs.yml` 的 `nav` 部分添加新文章链接
 3. 本地预览：`uv run mkdocs serve`
 4. 构建验证：`uv run mkdocs build`
