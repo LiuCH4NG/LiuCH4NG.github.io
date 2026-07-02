@@ -50,8 +50,8 @@
 <span class="card__desc">拆解 Anthropic 对 Agent 的工程哲学：少即是多，复杂度才是敌人。</span>
 </a>
 
-<a class="card" href="tech/Vibe_Coding_实战复盘/" markdown="1">
-<span class="card__label">效率工具</span>
+<a class="card" href="ai-coding/Vibe_Coding_实战复盘/" markdown="1">
+<span class="card__label">AI 编程</span>
 <span class="card__title">Vibe Coding 实战复盘</span>
 <span class="card__desc">从需求到交付，自然语言驱动开发的全流程实战经验与踩坑总结。</span>
 </a>
@@ -68,8 +68,8 @@
 <span class="card__desc">用一份设计文档，把模糊需求变成 AI 能执行的工程规范。</span>
 </a>
 
-<a class="card" href="llm/qwen3_coder_tutorial/" markdown="1">
-<span class="card__label">LLM</span>
+<a class="card" href="ai-coding/qwen3_coder_tutorial/" markdown="1">
+<span class="card__label">AI 编程</span>
 <span class="card__title">Qwen3-Coder 中文教程</span>
 <span class="card__desc">通义千问代码模型的集成、微调与生产落地完整指南。</span>
 </a>
@@ -80,27 +80,11 @@
 
 <div class="category-grid" markdown="1">
 
-<a class="category-tile" href="tech/AI_tools/" markdown="1">
-:material-toolbox:
-<span class="category-tile__body">
-<span class="category-tile__name">效率工具</span>
-<span class="category-tile__count">6 篇文章</span>
-</span>
-</a>
-
-<a class="category-tile" href="llm/qwen3_coder_tutorial/" markdown="1">
-:material-brain:
-<span class="category-tile__body">
-<span class="category-tile__name">LLM 相关</span>
-<span class="category-tile__count">4 篇文章</span>
-</span>
-</a>
-
 <a class="category-tile" href="models/claudeopus4.7/" markdown="1">
 :material-chart-bar:
 <span class="category-tile__body">
 <span class="category-tile__name">模型评测与发布</span>
-<span class="category-tile__count">13 篇文章</span>
+<span class="category-tile__count">15 篇文章</span>
 </span>
 </a>
 
@@ -108,7 +92,7 @@
 :material-laptop:
 <span class="category-tile__body">
 <span class="category-tile__name">AI 编程工具</span>
-<span class="category-tile__count">17 篇文章</span>
+<span class="category-tile__count">19 篇文章</span>
 </span>
 </a>
 
@@ -116,7 +100,7 @@
 :material-robot-outline:
 <span class="category-tile__body">
 <span class="category-tile__name">Agent 与智能体</span>
-<span class="category-tile__count">15 篇文章</span>
+<span class="category-tile__count">16 篇文章</span>
 </span>
 </a>
 
@@ -136,6 +120,14 @@
 </span>
 </a>
 
+<a class="category-tile" href="software-eng/优秀API设计/" markdown="1">
+:material-code-braces:
+<span class="category-tile__body">
+<span class="category-tile__name">软件工程</span>
+<span class="category-tile__count">1 篇文章</span>
+</span>
+</a>
+
 <a class="category-tile" href="thinking/ai-manager-skills/" markdown="1">
 :material-lightbulb-outline:
 <span class="category-tile__body">
@@ -148,7 +140,7 @@
 :material-progress-wrench:
 <span class="category-tile__body">
 <span class="category-tile__name">工具与效率</span>
-<span class="category-tile__count">5 篇文章</span>
+<span class="category-tile__count">9 篇文章</span>
 </span>
 </a>
 
