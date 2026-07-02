@@ -119,6 +119,7 @@ nav:
     - "HTML PPT Skill 推荐": thinking/html-ppt-skill.md
     - "工程师用 AI 效率翻倍，为什么团队交付没变快？": thinking/trae-it-reshape.md
   - 工具与效率:
+    - "把 Windows 装进 Docker，比虚拟机省了多少事": tools/win_docker_art.md
     - "M 系列 Mac 4K 屏 HiDPI 设置指南": tools/mac4k2k.md
     - "GitHub 20K Star！专为 Claude Code 设计的终端 cmux": tools/cmux.md
     - "一条命令把 PDF 榨成 Obsidian 双链脑图": tools/hyper-extract.md
