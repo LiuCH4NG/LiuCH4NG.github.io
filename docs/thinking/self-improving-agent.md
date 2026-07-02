@@ -199,9 +199,9 @@ npm install 会失败，因为 lock 文件是 pnpm-lock.yaml，
 
 他在评论区晒出了 4 条记录：
 
-1. **LRN-20260201-001** — 总是用 YOLO 模式运行编码代理 ✅ **已提升**
-2. **LRN-20260201-002** — 不要打断工作中的编码代理 ✅ **已提升**
-3. **LRN-20260201-003** — Codex 的 YOLO 标志是 `--yolo` ✅ **已提升**
+1. **LRN-20260201-001** — 总是用 YOLO 模式运行编码代理 :material-check: **已提升**
+2. **LRN-20260201-002** — 不要打断工作中的编码代理 :material-check: **已提升**
+3. **LRN-20260201-003** — Codex 的 YOLO 标志是 `--yolo` :material-check: **已提升**
 4. **LRN-20260201-004** — **实际遵循自我改进提醒** ⏳ **待处理**
 
 第四条太真实了——**连"要记得用 self-improving-agent"这件事， itself 都需要被提醒**。这恰恰说明了这个问题的普遍性：不管是人还是 AI，"养成习惯"都是最难的环节。
@@ -264,7 +264,7 @@ self-improving-agent 不是一个炫技的工具，它解决的是一个**非常
 
 如果你每天都在用 Claude Code、Cursor、Codex 或 OpenClaw 写代码，花 5 分钟装一下这个 Skill，再花 1 个下午养成"让 AI 记笔记"的习惯。一个月之后回头看，你会惊讶于 `.learnings/` 里积累了多少本会被遗忘的智慧。
 
-> **🔗 ClawHub 地址**：https://clawhub.ai/pskoett/self-improving-agent
+> **:material-link: ClawHub 地址**：https://clawhub.ai/pskoett/self-improving-agent
 > **安装命令**：`clawdhub install self-improving-agent`
 > **GitHub 源码**：https://github.com/peterskoett/self-improving-agent
 

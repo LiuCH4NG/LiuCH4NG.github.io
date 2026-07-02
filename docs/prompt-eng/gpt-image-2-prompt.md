@@ -252,6 +252,6 @@ Amateur photo of an open notebook lying flat, filled with handwritten notes in b
 
 完整库 + 所有原图 + 所有 Prompt：
 
-> 👉 https://github.com/jamez-bondos/awesome-gpt-image-2-prompts
+> :material-arrow-right: https://github.com/jamez-bondos/awesome-gpt-image-2-prompts
 
 如果你用 GPT-Image-2 跑出了满意的图，欢迎发在评论区

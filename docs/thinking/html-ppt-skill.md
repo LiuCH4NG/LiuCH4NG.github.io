@@ -167,7 +167,7 @@ html-ppt-skill 不是一个"替代 PowerPoint"的工具，它是一个**把 PPT 
 
 那这个项目值得你花 5 分钟装一下，再花 10 分钟试一个 deck。
 
-> **🔗 GitHub 地址**：https://github.com/lewislulu/html-ppt-skill
+> **:material-link: GitHub 地址**：https://github.com/lewislulu/html-ppt-skill
 > **安装命令**：`npx skills add https://github.com/lewislulu/html-ppt-skill`
 
 ---

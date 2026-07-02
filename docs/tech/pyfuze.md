@@ -22,9 +22,9 @@ pyfuze 提供三种打包模式：
 
 | 模式 | 离线支持 | 跨平台 | 大小 | 兼容性 |
 |------|----------|--------|------|--------|
-| **Bundle** (默认) | ✅ | ❌ | 🔴 大 | 🟢 高 |
-| **Online** | ❌ | ✅ | 🟢 小 | 🟢 高 |
-| **Portable** | ✅ | ✅ | 🟡 中 | 🔴 低 |
+| **Bundle** (默认) | :material-check: | :material-close: | :material-alert-octagon: 大 | :material-check-circle: 高 |
+| **Online** | :material-close: | :material-check: | :material-check-circle: 小 | :material-check-circle: 高 |
+| **Portable** | :material-check: | :material-check: | :material-alert-circle: 中 | :material-alert-octagon: 低 |
 
 ### Bundle 模式
 - 包含 Python 和所有依赖项

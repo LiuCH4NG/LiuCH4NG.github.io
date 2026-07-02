@@ -1,4 +1,4 @@
-# 🪨 洞穴人说话省75%Token？这个AI提示词技巧火了
+# :material-hammer: 洞穴人说话省75%Token？这个AI提示词技巧火了
 
 > **"为什么用很多词，当少词也能行？"**
 > —— 一位远古智者（其实是个程序员）
@@ -24,10 +24,10 @@
 
 同样是解释一个 React 重渲染的问题：
 
-**🗣️ 正常 Claude（69个Token）：**
+**:material-account-voice: 正常 Claude（69个Token）：**
 > "The reason your React component is re-rendering is likely because you're creating a new object reference on each render cycle. When you pass an inline object as a prop, React's shallow comparison sees it as a different object every time, which triggers a re-render. I'd recommend using useMemo to memoize the object."
 
-**🪨 洞穴人 Claude（19个Token）：**
+**:material-hammer: 洞穴人 Claude（19个Token）：**
 > "New object ref each render. Inline object prop = new ref = re-render. Wrap in `useMemo`."
 
 ---
@@ -36,10 +36,10 @@
 
 再看一个：
 
-**🗣️ 正常 Claude：**
+**:material-account-voice: 正常 Claude：**
 > "Sure! I'd be happy to help you with that. The issue you're experiencing is most likely caused by your authentication middleware not properly validating the token expiry. Let me take a look and suggest a fix."
 
-**🪨 洞穴人 Claude：**
+**:material-hammer: 洞穴人 Claude：**
 > "Bug in auth middleware. Token expiry check use `<` not `<=`. Fix:"
 
 第二个直接给出了问题根因，第一个先废话了30个Token才开始干活。
@@ -72,14 +72,14 @@ claude install-skill JuliusBrussee/caveman
 
 | 内容类型 | 洞穴人怎么处理 |
 |---------|-------------|
-| 英文解释性文字 | 🪨 砍掉填充词，只留骨干 |
-| 代码块 | ✍️ 正常书写（洞穴人不傻） |
-| 技术术语 | 🧠 完整保留（polymorphism 还是 polymorphism） |
-| 报错信息 | 📋 原文引用 |
-| Git commit & PR | ✍️ 正常书写 |
-| 冠词 a/an/the | 💀 全删 |
-| 客套话 | 💀 "Sure, I'd be happy to" 灭绝 |
-| 模糊措辞 | 💀 "It might be worth considering" 灭绝 |
+| 英文解释性文字 | :material-hammer: 砍掉填充词，只留骨干 |
+| 代码块 | ✍ 正常书写（洞穴人不傻） |
+| 技术术语 | :material-brain: 完整保留（polymorphism 还是 polymorphism） |
+| 报错信息 | :material-clipboard: 原文引用 |
+| Git commit & PR | ✍ 正常书写 |
+| 冠词 a/an/the | :material-skull-outline: 全删 |
+| 客套话 | :material-skull-outline: "Sure, I'd be happy to" 灭绝 |
+| 模糊措辞 | :material-skull-outline: "It might be worth considering" 灭绝 |
 
 简单说，它消灭的是大语言模型最爱说的那些**"语言润滑剂"**——那些让回答听起来更礼貌、更流畅，但对技术内容毫无贡献的词。
 
@@ -142,16 +142,16 @@ VIBES                 ████████ OOG（原始！）
 
 适合洞穴人模式的场景：
 
-✅ **代码调试**：直接说哪里错了，怎么改  
-✅ **技术问答**：快速获取答案，不要铺垫  
-✅ **代码审查**：批量处理时省大量Token  
-✅ **自动化脚本**：后端批处理，没人看废话  
+:material-check: **代码调试**：直接说哪里错了，怎么改  
+:material-check: **技术问答**：快速获取答案，不要铺垫  
+:material-check: **代码审查**：批量处理时省大量Token  
+:material-check: **自动化脚本**：后端批处理，没人看废话  
 
 不适合的场景：
 
-❌ **用户界面回复**：终端用户需要友好语气  
-❌ **文档撰写**：需要完整表达  
-❌ **解释性内容**：新手需要更多上下文  
+:material-close: **用户界面回复**：终端用户需要友好语气  
+:material-close: **文档撰写**：需要完整表达  
+:material-close: **解释性内容**：新手需要更多上下文  
 
 ---
 
@@ -198,7 +198,7 @@ normal mode
 
 **洞穴人不废话。洞穴人直接给答案。洞穴人省你的钱。**
 
-🪨
+:material-hammer:
 
 ---
 

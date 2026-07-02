@@ -8,51 +8,51 @@
 
 ![](../assets/wechat/openclaw-v2026.4.9/Gemini_Generated_Image_h6qh4mh6qh4mh6qh.png)
 ---
-## 🔥 核心亮点
+## :material-fire: 核心亮点
 
-### 1️⃣ 内存 Dreaming 系统全面升级
+###  内存 Dreaming 系统全面升级
 
 这是本次更新最重磅的功能！
 
 **新增功能：**
-- 🧠 **Grounded REM Backfill 通道**：支持历史 `rem-harness --path`，让旧日记可以重新流入 Dreams
-- 📝 **结构化日记视图**：全新的 Control UI 界面，支持时间线导航、backfill/reset 控制
-- 🔄 **Diary Commit/Reset 流程**：更清晰的可持久化事实提取流程
+- :material-brain: **Grounded REM Backfill 通道**：支持历史 `rem-harness --path`，让旧日记可以重新流入 Dreams
+- :material-note-edit: **结构化日记视图**：全新的 Control UI 界面，支持时间线导航、backfill/reset 控制
+- :material-sync: **Diary Commit/Reset 流程**：更清晰的可持久化事实提取流程
 - ⚡ **实时短期记忆提升集成**：旧笔记可以无缝重播到梦境和持久记忆中
 
-> 💡 **用户收益**：不再需要第二个内存栈，历史笔记也能参与 dreaming！
+> :material-lightbulb: **用户收益**：不再需要第二个内存栈，历史笔记也能参与 dreaming！
 
 ---
 
-### 2️⃣ 安全加固大升级 🔒
+###  安全加固大升级 :material-shield-lock:
 
 本次更新修复了多个安全漏洞，建议**所有用户立即升级**！
 
 | 安全问题 | 修复内容 | 影响等级 |
 |---------|---------|---------|
-| SSRF 绕过 | 交互驱动导航后重新检查被阻止的目的地 | 🔴 高 |
-| .env 注入 | 阻止不受信任工作区的运行时控制环境变量 | 🔴 高 |
-| 远程节点注入 | 标记远程 exec 事件为不可信，净化输出内容 | 🔴 高 |
-| 插件冲突 | 防止不受信任插件与捆绑 provider auth 冲突 | 🟠 中 |
-| 依赖漏洞 | 强制 `basic-ftp` 升级至 5.2.1 | 🟡 中 |
+| SSRF 绕过 | 交互驱动导航后重新检查被阻止的目的地 | :material-alert-octagon: 高 |
+| .env 注入 | 阻止不受信任工作区的运行时控制环境变量 | :material-alert-octagon: 高 |
+| 远程节点注入 | 标记远程 exec 事件为不可信，净化输出内容 | :material-alert-octagon: 高 |
+| 插件冲突 | 防止不受信任插件与捆绑 provider auth 冲突 | :material-alert: 中 |
+| 依赖漏洞 | 强制 `basic-ftp` 升级至 5.2.1 | :material-alert-circle: 中 |
 
 ---
 
-### 3️⃣ Android 配对体验修复
+###  Android 配对体验修复
 
 终于修复了困扰 Android 用户已久的配对问题！
 
 **修复内容：**
-- ✅ 新 QR 扫描时清除过期 setup-code 认证
-- ✅ 从新鲜配对中引导 operator 和 node 会话
-- ✅ 引导交接后优先使用存储的设备令牌
-- ✅ 应用后台时暂停配对自动重试
+- :material-check: 新 QR 扫描时清除过期 setup-code 认证
+- :material-check: 从新鲜配对中引导 operator 和 node 会话
+- :material-check: 引导交接后优先使用存储的设备令牌
+- :material-check: 应用后台时暂停配对自动重试
 
-> 🎯 **结果**：Android 扫描一次即可稳定配对！
+> :material-bullseye: **结果**：Android 扫描一次即可稳定配对！
 
 ---
 
-### 4️⃣ Slack 图片附件加载修复
+###  Slack 图片附件加载修复
 
 Slack 用户 rejoice！`url_private_download` 图片附件现在可以正常加载了。
 
@@ -62,7 +62,7 @@ Slack 用户 rejoice！`url_private_download` 图片附件现在可以正常加�
 
 ---
 
-### 5️⃣ Matrix 网关稳定性提升
+###  Matrix 网关稳定性提升
 
 - 等待 Matrix 同步就绪后再标记启动成功
 - 后台处理器失败不再导致整个网关崩溃
@@ -70,7 +70,7 @@ Slack 用户 rejoice！`url_private_download` 图片附件现在可以正常加�
 
 ---
 
-## 🐛 重点 BUG 修复清单
+## :material-bug: 重点 BUG 修复清单
 
 ### 会话与聊天
 - **修复**：快速切换会话时历史记录重载导致的不同步问题
@@ -96,11 +96,11 @@ Slack 用户 rejoice！`url_private_download` 图片附件现在可以正常加�
 
 ---
 
-## ⚠️ 已知问题（最新 Issues）
+## ⚠ 已知问题（最新 Issues）
 
 在 2026.4.9 发布后，社区报告了以下新问题：
 
-### 🔴 高优先级
+### :material-alert-octagon: 高优先级
 
 1. **[#63661] Context overflow 产生 0 payloads**
    - UI 显示无限加载 spinner 而不是错误
@@ -120,7 +120,7 @@ Slack 用户 rejoice！`url_private_download` 图片附件现在可以正常加�
    - 标签：`regression` `bug`
    - 状态：待修复
 
-### 🟠 中优先级
+### :material-alert: 中优先级
 
 5. **[#63657] 一次性 cron jobs 网关注重启后静默丢失**
    - 标签：`bug:behavior`
@@ -139,9 +139,9 @@ Slack 用户 rejoice！`url_private_download` 图片附件现在可以正常加�
 
 ---
 
-## 💡 更新建议
+## :material-lightbulb: 更新建议
 
-### 强烈建议升级 ⬆️
+### 强烈建议升级 ⬆
 
 如果你是以下用户，请**立即升级**：
 
@@ -187,7 +187,7 @@ openclaw auth status
 
 ---
 
-## 🔮 未来展望
+## :material-crystal-ball: 未来展望
 
 根据最新的 PR 和社区讨论，以下功能正在开发中：
 
@@ -196,12 +196,12 @@ openclaw auth status
 
 ---
 
-## 🔗 相关链接
+## :material-link: 相关链接
 
-- 📥 [下载页面](https://github.com/openclaw/openclaw/releases/tag/v2026.4.9)
-- 🐛 [问题追踪](https://github.com/openclaw/openclaw/issues)
-- 📖 [完整更新日志](https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md)
+- :material-download: [下载页面](https://github.com/openclaw/openclaw/releases/tag/v2026.4.9)
+- :material-bug: [问题追踪](https://github.com/openclaw/openclaw/issues)
+- :material-book-open-variant: [完整更新日志](https://github.com/openclaw/openclaw/blob/main/CHANGELOG.md)
 
 ---
 
-> 💬 **你对这次更新有什么看法？欢迎在评论区讨论！**
+> :material-comment: **你对这次更新有什么看法？欢迎在评论区讨论！**

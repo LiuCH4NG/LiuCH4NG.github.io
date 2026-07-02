@@ -111,7 +111,7 @@ DeepSeek V4 Pro 是话痨型选手，推理过程更长、思考更细致，toke
 
 ——但这一节写到一半，DeepSeek 官方扔出价格调整公告，把上面的成本叙事直接掀了：
 
-> 🤖 DeepSeek API 价格调整：全系列模型输入缓存命中价格降至首发价的 1/10，V4-Pro 限时 2.5 折
+> :material-robot: DeepSeek API 价格调整：全系列模型输入缓存命中价格降至首发价的 1/10，V4-Pro 限时 2.5 折
 
 ![deepseek sell](../assets/wechat/deepseekvsglm/deepseek-sell.jpg)
 
@@ -196,6 +196,6 @@ GLM-5.1 智能上限只低 0.1 分，速度快 40%、幻觉低 12 分。怕胡�
 
 ---
 
-> 📊 数据来源：Artificial Analysis（独立第三方 AI 模型评测机构）
+> :material-chart-bar: 数据来源：Artificial Analysis（独立第三方 AI 模型评测机构）
 > - GLM-5.1：[https://artificialanalysis.ai/models/glm-5-1](https://artificialanalysis.ai/models/glm-5-1)
 > - DeepSeek V4 Pro：[https://artificialanalysis.ai/models/deepseek-v4-pro](https://artificialanalysis.ai/models/deepseek-v4-pro)
