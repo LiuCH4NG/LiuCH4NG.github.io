@@ -40,18 +40,6 @@ theme:
 
 nav:
   - 首页: index.md
-  - 效率工具:
-    - 现代开发常用的AI工具: tech/AI_tools.md
-    - 优秀API设计: tech/优秀API设计.md
-    - Ruff 教程: tech/ruff_tutorial.md
-    - UV 教程: tech/uv_tutorial.md
-    - Python高效打包工具: tech/pyfuze.md
-    - Vibe Coding 实战复盘: tech/Vibe_Coding_实战复盘.md
-  - LLM 相关: 
-    - Qwen3-Coder 中文教程: llm/qwen3_coder_tutorial.md
-    - 使用EvalScope对大模型评估: llm/evalscope_tutorial.md
-    - ComfyUI 使用 GGUF量化模型教程: llm/ComfyUI使用GGUF量化模型教程.md
-    - Mem0 原理解析: tech/Mem0原理解析.md
   - 模型评测与发布:
     - "Claude Opus 4.7 深夜发布：代码能力暴涨 13%，价格却一分没涨": models/claudeopus4.7.md
     - "DeepSeek-V4 预览版：迈入百万上下文普惠时代": models/deepseekv4.md
@@ -66,6 +54,8 @@ nav:
     - "80.3% SWE-Bench，一天迁移 5000 万行代码，Claude Fable 5 来了": models/claude5.md
     - "1T 万亿参数 vs 1M 百万上下文，Kimi K2.7 Code 与 GLM-5.2 怎么选": models/glm5.2vskimi2.7.md
     - "半价拿到接近 Opus 4.8 的能力，Claude Sonnet 5 发布": models/claude-sonnet-5.md
+    - 使用EvalScope对大模型评估: models/evalscope_tutorial.md
+    - ComfyUI 使用 GGUF量化模型教程: models/ComfyUI使用GGUF量化模型教程.md
   - AI 编程工具:
     - "一个 CLAUDE.md 治好 AI 编程焦虑": ai-coding/karpathy-claudemd.md
     - "Claude Agentic Skills 深度解析": ai-coding/claude-skills-7.md
@@ -84,6 +74,8 @@ nav:
     - "Otty 把 Claude Code 装进了原生终端": ai-coding/otty.md
     - "OpenAI Codex 21 天写爆 37TB，你的 SSD 可能正在慢性死亡": ai-coding/codex-ssd-bug.md
     - "一行 git push，9 步流水线把 AI 代码自动审到能合并": ai-coding/git-no-mistakes.md
+    - Vibe Coding 实战复盘: ai-coding/Vibe_Coding_实战复盘.md
+    - Qwen3-Coder 中文教程: ai-coding/qwen3_coder_tutorial.md
   - Agent 与智能体架构:
     - "AI Agent 选型指南：5 种核心架构模式": agent/agent-5-patterns.md
     - "Agency Agents 在一人公司模式中的深度应用": agent/agency-agents.md
@@ -100,6 +92,7 @@ nav:
     - "Agent 不能上网？给 AI 戴上互联网眼镜": agent/agent-reach.md
     - "四千行 Python 的 Nanobot": agent/nanobot.md
     - "有效的 Agent 是更简单的三层架构": agent/anthropic-effective-agents.md
+    - Mem0 原理解析: agent/Mem0原理解析.md
   - AI 产品动态:
     - "Google Stitch 产品解读": products/google-stitch.md
     - "OpenCode v1.4.0 更新解读": products/opencode-v1.4.0.md
@@ -118,6 +111,8 @@ nav:
     - "Claude Code 常用命令速查": prompt-eng/claudecode-commands.md
     - "GitHub 82K Star 的 DESIGN.md": prompt-eng/awesome-design-md.md
     - "1333 行系统指令流出：苹果把 Siri 提示词写成了操作系统规范": prompt-eng/siri-prompt.md
+  - 软件工程:
+    - 优秀API设计: software-eng/优秀API设计.md
   - 管理与应用思考:
     - "AI 时代管理者的核心能力": thinking/ai-manager-skills.md
     - "2026 AI Ascent Karpathy 演讲解读": thinking/2026-ai-ascent-karpathy.md
@@ -130,6 +125,10 @@ nav:
     - "一条命令把 PDF 榨成 Obsidian 双链脑图": tools/hyper-extract.md
     - "用 OpenClaw 驱动 yt-dlp 自动收集视频素材": tools/yt-dlp.md
     - "不用 JS 逆向，用你手里的 Chrome 就能抓小红书": tools/media-crawler.md
+    - 现代开发常用的AI工具: tools/AI_tools.md
+    - Ruff 教程: tools/ruff_tutorial.md
+    - UV 教程: tools/uv_tutorial.md
+    - Python高效打包工具: tools/pyfuze.md
 
   # 更多页面可以在这里添加
 
