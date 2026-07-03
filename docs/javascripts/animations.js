@@ -242,9 +242,7 @@
     const topButton = document.querySelector('.md-top');
     if (!topButton) return;
 
-    gsap.set(topButton, { scale: 0.8, opacity: 0 });
-
-    const observer = new MutationObserver(() => {
+    function syncVisibility() {
       const isHidden = topButton.hasAttribute('hidden') || topButton.getAttribute('aria-hidden') === 'true';
       gsap.to(topButton, {
         scale: isHidden ? 0.8 : 1,
@@ -252,8 +250,11 @@
         duration: 0.25,
         ease: 'power2.out',
       });
-    });
+    }
 
+    gsap.set(topButton, { scale: 0.8, opacity: 0 });
+
+    const observer = new MutationObserver(syncVisibility);
     observer.observe(topButton, { attributes: true, attributeFilter: ['hidden', 'aria-hidden'] });
 
     topButton.addEventListener('mouseenter', () => {
