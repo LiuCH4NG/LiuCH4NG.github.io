@@ -89,7 +89,87 @@
       );
     }
   }
-  function initScrollAnimations() {}
+  function initScrollAnimations() {
+    // Focus strip
+    const focusItems = document.querySelectorAll('.focus-item');
+    if (focusItems.length) {
+      gsap.fromTo(focusItems,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.7,
+          stagger: 0.1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.focus-grid',
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
+    }
+
+    // Featured cards
+    const cards = document.querySelectorAll('.card-grid .card');
+    if (cards.length) {
+      gsap.fromTo(cards,
+        { opacity: 0, y: 28 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.75,
+          stagger: 0.1,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.card-grid',
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
+    }
+
+    // Category tiles
+    const tiles = document.querySelectorAll('.category-grid .category-tile');
+    if (tiles.length) {
+      gsap.fromTo(tiles,
+        { opacity: 0, y: 20, scale: 0.96 },
+        {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+          duration: 0.65,
+          stagger: 0.08,
+          ease: 'power3.out',
+          scrollTrigger: {
+            trigger: '.category-grid',
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
+    }
+
+    // GitHub stats row
+    const statsRow = document.querySelector('.stats-row');
+    if (statsRow) {
+      gsap.fromTo(statsRow,
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: statsRow,
+            start: 'top 85%',
+            toggleActions: 'play none none none',
+          },
+        }
+      );
+    }
+  }
   function initHoverAnimations() {}
   function initNavEffects() {}
   function initThemeToggleAnimation() {}
