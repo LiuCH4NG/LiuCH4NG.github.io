@@ -191,7 +191,29 @@
       });
     });
   }
-  function initNavEffects() {}
+  function initNavEffects() {
+    const header = document.querySelector('.md-header');
+    if (!header) return;
+
+    const scrollThreshold = 60;
+    let ticking = false;
+
+    function updateHeader() {
+      const scrolled = window.scrollY > scrollThreshold;
+      header.classList.toggle('is-scrolled', scrolled);
+      ticking = false;
+    }
+
+    function onScroll() {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true });
+    updateHeader();
+  }
   function initThemeToggleAnimation() {}
   function initBackToTopAnimation() {}
   function initSidebarAnimations() {}

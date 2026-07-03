@@ -9,6 +9,7 @@
 :root {
   /* Anthropic warm palette */
   --paper: #FAF9F5;
+  --paper-rgb: 250, 249, 245;
   --paper-elevated: #FFFFFF;
   --sand: #F0EEE6;
   --sand-deep: #EAE6DB;
@@ -58,6 +59,7 @@
 /* ----------  Dark: warm charcoal (not cold blue)  ---------- */
 [data-md-color-scheme="slate"] {
   --paper: #1F1E1D;
+  --paper-rgb: 31, 30, 29;
   --paper-elevated: #2A2926;
   --sand: #262523;
   --sand-deep: #323130;
@@ -214,6 +216,19 @@ body,
 }
 .md-header__button.md-logo {
   transition: transform var(--transition);
+}
+
+/* Header scroll state */
+.md-header {
+  transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease, -webkit-backdrop-filter 0.3s ease;
+}
+
+.md-header.is-scrolled {
+  background: rgba(var(--paper-rgb), 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
+  border-bottom-color: var(--border);
 }
 
 /* Search input */
