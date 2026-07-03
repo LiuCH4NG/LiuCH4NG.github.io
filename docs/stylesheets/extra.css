@@ -792,3 +792,40 @@ hr {
     transform: none;
   }
 }
+
+/* ============================================================
+   Animation utilities & reduced motion override
+   ============================================================ */
+
+.reduce-motion *,
+.reduce-motion *::before,
+.reduce-motion *::after {
+  transition-duration: 0.01ms !important;
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+}
+
+/* Base state for animated elements to prevent FOUC */
+.hero__eyebrow,
+.hero h1,
+.hero__lead,
+.hero__actions .md-button,
+.focus-item,
+.card,
+.category-tile,
+.stats-row,
+.md-content__inner {
+  opacity: 1;
+}
+
+.js-animations-ready .hero__eyebrow,
+.js-animations-ready .hero h1,
+.js-animations-ready .hero__lead,
+.js-animations-ready .hero__actions .md-button,
+.js-animations-ready .focus-item,
+.js-animations-ready .card,
+.js-animations-ready .category-tile,
+.js-animations-ready .stats-row,
+.js-animations-ready .md-content__inner {
+  opacity: 0;
+}
