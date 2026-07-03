@@ -238,8 +238,41 @@
       });
     });
   }
-  function initBackToTopAnimation() {}
-  function initSidebarAnimations() {}
+  function initBackToTopAnimation() {
+    const topButton = document.querySelector('.md-top');
+    if (!topButton) return;
+
+    gsap.set(topButton, { scale: 0.8, opacity: 0 });
+
+    const observer = new MutationObserver(() => {
+      const isHidden = topButton.hasAttribute('hidden') || topButton.getAttribute('aria-hidden') === 'true';
+      gsap.to(topButton, {
+        scale: isHidden ? 0.8 : 1,
+        opacity: isHidden ? 0 : 1,
+        duration: 0.25,
+        ease: 'power2.out',
+      });
+    });
+
+    observer.observe(topButton, { attributes: true, attributeFilter: ['hidden', 'aria-hidden'] });
+
+    topButton.addEventListener('mouseenter', () => {
+      gsap.to(topButton, { y: -2, duration: 0.2, ease: 'power2.out' });
+    });
+    topButton.addEventListener('mouseleave', () => {
+      gsap.to(topButton, { y: 0, duration: 0.2, ease: 'power2.out' });
+    });
+  }
+
+  function initSidebarAnimations() {
+    const activeLinks = document.querySelectorAll('.md-nav__link--active');
+    activeLinks.forEach((link) => {
+      gsap.fromTo(link,
+        { '--indicator-height': '0%' },
+        { '--indicator-height': '100%', duration: 0.25, ease: 'power2.out' }
+      );
+    });
+  }
 
   whenReady(initAnimations);
 })();

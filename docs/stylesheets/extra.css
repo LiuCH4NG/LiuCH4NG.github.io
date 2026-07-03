@@ -329,9 +329,23 @@ body,
   color: var(--clay);
 }
 .md-nav__link--active {
+  position: relative;
   font-weight: 600;
   background: var(--clay-soft);
-  border-left: 3px solid var(--clay);
+  border-left: 3px solid transparent;
+  --indicator-height: 100%;
+}
+
+.md-nav__link--active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: var(--indicator-height, 100%);
+  background: var(--clay);
+  border-radius: 0 2px 2px 0;
+  transition: height 0.25s ease;
 }
 
 .md-nav--secondary {
