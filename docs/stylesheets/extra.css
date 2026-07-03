@@ -559,10 +559,9 @@ hr {
   box-shadow: var(--shadow-sm);
   text-decoration: none;
   color: var(--ink);
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  transition: box-shadow var(--transition), border-color var(--transition);
 }
 .card:hover {
-  transform: translateY(-3px);
   box-shadow: var(--shadow-md);
   border-color: var(--clay);
 }
@@ -618,10 +617,9 @@ hr {
   box-shadow: var(--shadow-sm);
   text-decoration: none;
   color: var(--ink);
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition), background var(--transition);
+  transition: box-shadow var(--transition), border-color var(--transition), background var(--transition);
 }
 .category-tile:hover {
-  transform: translateY(-2px);
   box-shadow: var(--shadow-md);
   border-color: var(--clay);
   background: var(--clay-soft);

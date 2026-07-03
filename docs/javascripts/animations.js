@@ -170,7 +170,27 @@
       );
     }
   }
-  function initHoverAnimations() {}
+  function initHoverAnimations() {
+    const interactiveCards = document.querySelectorAll('.card, .category-tile, .gh-grid a');
+
+    interactiveCards.forEach((el) => {
+      el.addEventListener('mouseenter', () => {
+        gsap.to(el, {
+          y: el.classList.contains('category-tile') ? -2 : -4,
+          duration: 0.25,
+          ease: 'power2.out',
+        });
+      });
+
+      el.addEventListener('mouseleave', () => {
+        gsap.to(el, {
+          y: 0,
+          duration: 0.35,
+          ease: 'power2.out',
+        });
+      });
+    });
+  }
   function initNavEffects() {}
   function initThemeToggleAnimation() {}
   function initBackToTopAnimation() {}
