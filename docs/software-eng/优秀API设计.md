@@ -1,3 +1,7 @@
+---
+date: 2025-08-25
+---
+
 # 优秀API设计
 
 翻译自：[Everything I know about good API design](https://www.seangoedecke.com/good-api-design/)

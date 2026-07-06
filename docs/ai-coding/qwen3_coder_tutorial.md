@@ -1,3 +1,7 @@
+---
+date: 2025-07-25
+---
+
 # 新一代代码大模型 Qwen3-Coder 中文使用教程
 
 > 本文编译自 Qwen-Team 官方博客文章 [Qwen3-Coder: Agentic Coding in the World](https://qwenlm.github.io/blog/qwen3-coder/)。

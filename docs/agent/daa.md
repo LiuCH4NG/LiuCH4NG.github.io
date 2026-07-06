@@ -1,4 +1,5 @@
 ---
+date: 2026-05-14
 title: "从DAA到自我进化：百度在给Agent建一个新世界"
 source: "https://www.pingwest.com/a/313695"
 author:

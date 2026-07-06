@@ -1,3 +1,7 @@
+---
+date: 2025-07-22
+---
+
 参考文档 [Linux 系统安装 ComfyUI 教程 | ComfyUI Wiki](https://comfyui-wiki.com/zh/install/install-comfyui/install-comfyui-on-linux)
 
 ### 第一步：系统环境准备

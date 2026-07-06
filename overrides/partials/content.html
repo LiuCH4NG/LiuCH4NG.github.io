@@ -1,0 +1,20 @@
+{#-
+  Override of material/templates/partials/content.html
+  Inserts the article publish date (frontmatter `date`) directly after
+  the first H1 — for non-homepage pages that declare a date.
+-#}
+{% include "partials/tags.html" %}
+{% include "partials/actions.html" %}
+{% set article_date = page.meta.date if (page.meta and page.meta.date) else none %}
+{% if "<h1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+  {% if article_date %}<div class="article-date">发布于 {{ article_date }}</div>{% endif %}
+  {{ page.content }}
+{% elif article_date %}
+  {{ page.content | replace("</h1>", '</h1><div class="article-date">发布于 ' ~ article_date ~ '</div>', 1) | safe }}
+{% else %}
+  {{ page.content }}
+{% endif %}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}

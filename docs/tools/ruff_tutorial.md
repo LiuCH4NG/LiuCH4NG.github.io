@@ -1,3 +1,7 @@
+---
+date: 2025-07-21
+---
+
 # Ruff: 闪电般快速的Python Linter与格式化工具
 
 `Ruff` 是一个用Rust编写的、性能极高的Python代码检查和格式化工具。它的目标是成为Python生态系统中的一站式代码质量工具，速度比现有的工具（如`Flake8`, `isort`, `Black`）快10-100倍。

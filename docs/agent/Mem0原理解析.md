@@ -1,3 +1,7 @@
+---
+date: 2025-11-12
+---
+
 # Mem0 项目原理深度分析
 
 项目地址：https://github.com/mem0ai/mem0

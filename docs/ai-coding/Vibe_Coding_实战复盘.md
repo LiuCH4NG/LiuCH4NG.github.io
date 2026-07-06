@@ -1,3 +1,7 @@
+---
+date: 2025-12-17
+---
+
 # 关于 Vibe Coding 的 10 条实战复盘
 
 ![Vibe Coding 实战指南](../assets/images/vibe-coding-hero.jpg)
