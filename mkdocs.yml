@@ -54,7 +54,6 @@ nav:
     - "1T 万亿参数 vs 1M 百万上下文，Kimi K2.7 Code 与 GLM-5.2 怎么选": models/glm5.2vskimi2.7.md
     - "半价拿到接近 Opus 4.8 的能力，Claude Sonnet 5 发布": models/claude-sonnet-5.md
     - "DeepSeek-V4 正式发布：1M上下文成标配，国产开源模型又卷疯了": models/deepseekv4.md
-    - "OpenCode Go 全球调用数据观察：中国开发者仅占 16%，DeepSeek 独占七成市场": models/opencode-go-data.md
     - "Qwen3.5 vs Gemma4 双雄对决：2026开源AI选型指南": models/qwen3.5-vs-gemma4.md
     - "还在逐 Token 画框？NVIDIA LocateAnything-3B 把边界框一次画准": models/nvidia-locateanything-3b.md
     - "别再只看 benchmark，开发者真正在用的榜单长这样": models/opencode-go-ranking.md
