@@ -84,6 +84,8 @@ nav:
     - "Vibe Coding 实战复盘": ai-coding/Vibe_Coding_实战复盘.md
     - "Qwen3-Coder 中文教程": ai-coding/qwen3_coder_tutorial.md
   - Agent 与智能体架构:
+    - "MCP 是管道，OKF 是管道里的水，Google 刚发布的知识格式有什么用": agent/okf.md
+    - "LangChain DeepAgents 深度拆解：6 个中间件如何让 Agent 从玩具变工具": agent/langchain-deepagents.md
     - "从 LLMChain 到 create_agent，LangChain 1.0 把主包削成了 4 个核心抽象": agent/langchain-1.0.md
     - "有效的 Agent 是更简单的三层架构": agent/anthropic-effective-agents.md
     - "四千行 Python 的 Nanobot": agent/nanobot.md
@@ -103,6 +105,8 @@ nav:
     - "Claude Code vs Hermes Agent：谁才是你的 24 小时\"数字外脑\"？": agent/hermes-vs-claudecode.md
     - "Mem0 原理解析": agent/Mem0原理解析.md
   - AI 产品动态:
+    - "OfficeCLI 开源，首个专为 AI 智能体设计的 Office 套件来了": products/officecli.md
+    - "GitHub 热门开源 AI 会议助手 Meetily，录音和总结一个字节都不上云": products/meetily.md
     - "这个开源项目让 AI 生成了真 PPT，不是截图": products/ppt-master.md
     - "这款开源 Agent 把矩阵运营全包了": products/ai-to-earn.md
     - "27K Star 开源工具叫板 NotebookLM": products/open-notebook.md
