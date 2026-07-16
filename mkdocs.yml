@@ -84,6 +84,7 @@ nav:
     - "Vibe Coding 实战复盘": ai-coding/Vibe_Coding_实战复盘.md
     - "Qwen3-Coder 中文教程": ai-coding/qwen3_coder_tutorial.md
   - Agent 与智能体架构:
+    - "你的 Agent 记住了所有对话，为什么还是不懂你": agent/agent-user-memory.md
     - "MCP 是管道，OKF 是管道里的水，Google 刚发布的知识格式有什么用": agent/okf.md
     - "LangChain DeepAgents 深度拆解：6 个中间件如何让 Agent 从玩具变工具": agent/langchain-deepagents.md
     - "从 LLMChain 到 create_agent，LangChain 1.0 把主包削成了 4 个核心抽象": agent/langchain-1.0.md
@@ -133,6 +134,7 @@ nav:
     - "Self-Improving Agent 推荐": thinking/self-improving-agent.md
     - "HTML PPT Skill 推荐": thinking/html-ppt-skill.md
   - 工具与效率:
+    - "让 Codex 在 Windows 上默认使用 PowerShell 7": tools/codex-powershell7.md
     - "把 Windows 装进 Docker，比虚拟机省了多少事": tools/win_docker_art.md
     - "不用 JS 逆向，用你手里的 Chrome 就能抓小红书": tools/media-crawler.md
     - "用 OpenClaw 驱动 yt-dlp 自动收集视频素材": tools/yt-dlp.md
