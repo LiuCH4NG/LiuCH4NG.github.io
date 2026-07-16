@@ -29,7 +29,7 @@
 
 <div class="focus-item" markdown="1">
 <span class="focus-item__label">技术栈</span>
-<span class="focus-item__text">Python · Go · LangGraph · Transformer · PyTorch · Qt</span>
+<span class="focus-item__text">Python · Go · LangChain · Transformer · PyTorch · Qt</span>
 </div>
 
 </div>
