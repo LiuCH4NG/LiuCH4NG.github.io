@@ -146,6 +146,47 @@
 
 </div>
 
+## 更新日志
+
+<div class="changelog" markdown="1">
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.07.16</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">Agent</span> <a href="agent/agent-user-memory/">你的 Agent 记住了所有对话，为什么还是不懂你</a></li>
+<li><span class="changelog__tag">工具</span> <a href="tools/codex-powershell7/">让 Codex 在 Windows 上默认使用 PowerShell 7</a></li>
+</ul>
+</div>
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.07.13</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">Agent</span> <a href="agent/langchain-deepagents/">LangChain DeepAgents 深度拆解：6 个中间件如何让 Agent 从玩具变工具</a></li>
+<li><span class="changelog__tag">Agent</span> <a href="agent/okf/">MCP 是管道，OKF 是管道里的水，Google 刚发布的知识格式有什么用</a></li>
+<li><span class="changelog__tag">产品</span> <a href="products/meetily/">GitHub 热门开源 AI 会议助手 Meetily，录音和总结一个字节都不上云</a></li>
+<li><span class="changelog__tag">产品</span> <a href="products/officecli/">OfficeCLI 开源，首个专为 AI 智能体设计的 Office 套件来了</a></li>
+</ul>
+</div>
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.07.06</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">Agent</span> <a href="agent/langchain-1.0/">从 LLMChain 到 create_agent，LangChain 1.0 把主包削成了 4 个核心抽象</a></li>
+<li><span class="changelog__tag">Agent</span> <a href="agent/hermes-vs-claudecode/">Claude Code vs Hermes Agent：谁才是你的 24 小时"数字外脑"？</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/academic-research-skills/">Claude Code 装上这套 Skills，学术研究从选题到发表全流程 AI 协作</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/gsap-skills/">8 个 Skills 注入 Claude Code，GSAP 官方终于看不下去 AI 的烂动效了</a></li>
+<li><span class="changelog__tag">模型</span> <a href="models/deepseekv4/">DeepSeek-V4 正式发布：1M上下文成标配，国产开源模型又卷疯了</a></li>
+<li><span class="changelog__tag">模型</span> <a href="models/nvidia-locateanything-3b/">还在逐 Token 画框？NVIDIA LocateAnything-3B 把边界框一次画准</a></li>
+<li><span class="changelog__tag">模型</span> <a href="models/opencode-go-ranking/">别再只看 benchmark，开发者真正在用的榜单长这样</a></li>
+<li><span class="changelog__tag">模型</span> <a href="models/qwen3.5-vs-gemma4/">Qwen3.5 vs Gemma4 双雄对决：2026开源AI选型指南</a></li>
+</ul>
+</div>
+
+</div>
+
 ## GitHub
 
 <div class="stats-row" markdown="1">

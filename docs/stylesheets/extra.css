@@ -686,6 +686,78 @@ hr {
 }
 
 /* ============================================================
+   Changelog timeline — update log
+   ============================================================ */
+.changelog {
+  margin: 1.2rem 0;
+}
+.changelog__group {
+  position: relative;
+  padding: 0 0 1.6rem 1.8rem;
+  border-left: 2px solid var(--border);
+}
+.changelog__group:last-child {
+  border-left-color: transparent;
+  padding-bottom: 0;
+}
+.changelog__date {
+  position: absolute;
+  left: -10px;
+  top: 0.15rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--clay);
+  border: 3px solid var(--paper);
+  box-sizing: content-box;
+}
+.changelog__date-label {
+  display: inline-block;
+  font-family: var(--md-text-font);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--clay);
+  background: var(--clay-soft);
+  padding: 0.18rem 0.65rem;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+  margin-left: 0.8rem;
+}
+.changelog__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.changelog__list li {
+  padding: 0.25rem 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+.changelog__tag {
+  display: inline-block;
+  font-family: var(--md-text-font);
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-subtle);
+  background: var(--sand);
+  border: 1px solid var(--border);
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+.changelog__list a {
+  color: var(--ink);
+  border-bottom: none;
+  transition: color var(--transition);
+}
+.changelog__list a:hover {
+  color: var(--clay);
+}
+
+/* ============================================================
    GitHub stats / repo cards
    ============================================================ */
 .gh-grid {
