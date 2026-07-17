@@ -84,7 +84,7 @@
 :material-chart-bar:
 <span class="category-tile__body">
 <span class="category-tile__name">模型评测与发布</span>
-<span class="category-tile__count">15 篇文章</span>
+<span class="category-tile__count">18 篇文章</span>
 </span>
 </a>
 
@@ -92,7 +92,7 @@
 :material-laptop:
 <span class="category-tile__body">
 <span class="category-tile__name">AI 编程工具</span>
-<span class="category-tile__count">19 篇文章</span>
+<span class="category-tile__count">22 篇文章</span>
 </span>
 </a>
 
@@ -100,7 +100,7 @@
 :material-robot-outline:
 <span class="category-tile__body">
 <span class="category-tile__name">Agent 与智能体</span>
-<span class="category-tile__count">16 篇文章</span>
+<span class="category-tile__count">22 篇文章</span>
 </span>
 </a>
 
@@ -108,7 +108,7 @@
 :material-rocket-launch-outline:
 <span class="category-tile__body">
 <span class="category-tile__name">AI 产品动态</span>
-<span class="category-tile__count">10 篇文章</span>
+<span class="category-tile__count">12 篇文章</span>
 </span>
 </a>
 
@@ -140,7 +140,7 @@
 :material-progress-wrench:
 <span class="category-tile__body">
 <span class="category-tile__name">工具与效率</span>
-<span class="category-tile__count">9 篇文章</span>
+<span class="category-tile__count">11 篇文章</span>
 </span>
 </a>
 
@@ -149,6 +149,15 @@
 ## 更新日志
 
 <div class="changelog" markdown="1">
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.07.17</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">Agent</span> <a href="agent/ai-native-apps/">AI 原生 vs AI 赋能，差的不只是一个对话框</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/codex-quota-trio/">AGENTS.md + 模型分级 + 计划模式，Codex 省额度三件套</a></li>
+</ul>
+</div>
 
 <div class="changelog__group">
 <span class="changelog__date"></span>

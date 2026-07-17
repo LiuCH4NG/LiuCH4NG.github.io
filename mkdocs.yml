@@ -62,6 +62,7 @@ nav:
     - "ComfyUI 使用 GGUF量化模型教程": models/ComfyUI使用GGUF量化模型教程.md
     - "使用EvalScope对大模型评估": models/evalscope_tutorial.md
   - AI 编程工具:
+    - "AGENTS.md + 模型分级 + 计划模式，Codex 省额度三件套": ai-coding/codex-quota-trio.md
     - "一行 git push，9 步流水线把 AI 代码自动审到能合并": ai-coding/git-no-mistakes.md
     - "OpenAI Codex 21 天写爆 37TB，你的 SSD 可能正在慢性死亡": ai-coding/codex-ssd-bug.md
     - "Otty 把 Claude Code 装进了原生终端": ai-coding/otty.md
@@ -84,6 +85,7 @@ nav:
     - "Vibe Coding 实战复盘": ai-coding/Vibe_Coding_实战复盘.md
     - "Qwen3-Coder 中文教程": ai-coding/qwen3_coder_tutorial.md
   - Agent 与智能体架构:
+    - "AI 原生 vs AI 赋能，差的不只是一个对话框": agent/ai-native-apps.md
     - "你的 Agent 记住了所有对话，为什么还是不懂你": agent/agent-user-memory.md
     - "MCP 是管道，OKF 是管道里的水，Google 刚发布的知识格式有什么用": agent/okf.md
     - "LangChain DeepAgents 深度拆解：6 个中间件如何让 Agent 从玩具变工具": agent/langchain-deepagents.md
