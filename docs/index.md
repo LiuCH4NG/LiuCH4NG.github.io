@@ -84,7 +84,7 @@
 :material-chart-bar:
 <span class="category-tile__body">
 <span class="category-tile__name">模型评测与发布</span>
-<span class="category-tile__count">18 篇文章</span>
+<span class="category-tile__count">19 篇文章</span>
 </span>
 </a>
 
@@ -92,7 +92,7 @@
 :material-laptop:
 <span class="category-tile__body">
 <span class="category-tile__name">AI 编程工具</span>
-<span class="category-tile__count">22 篇文章</span>
+<span class="category-tile__count">24 篇文章</span>
 </span>
 </a>
 
@@ -149,6 +149,16 @@
 ## 更新日志
 
 <div class="changelog" markdown="1">
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.07.22</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/pi-vs-claude-code/">Pi vs Claude Code，这个开源 Agent 成本只要一半</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/omniroute/">271 家 AI 供应商串成一个免费池，这个开源网关把账单打到了 0</a></li>
+<li><span class="changelog__tag">模型</span> <a href="models/kimi-k3/">全球最大开源大模型 Kimi K3：2.8T 参数深度评测与订阅机制全景调研</a></li>
+</ul>
+</div>
 
 <div class="changelog__group">
 <span class="changelog__date"></span>

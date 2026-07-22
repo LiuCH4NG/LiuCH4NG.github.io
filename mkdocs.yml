@@ -43,6 +43,7 @@ theme:
 nav:
   - 首页: index.md
   - 模型评测与发布:
+    - "全球最大开源大模型 Kimi K3：2.8T 参数深度评测与订阅机制全景调研": models/kimi-k3.md
     - "还在逐 Token 画框？NVIDIA LocateAnything-3B 把边界框一次画准": models/nvidia-locateanything-3b.md
     - "别再只看 benchmark，开发者真正在用的榜单长这样": models/opencode-go-ranking.md
     - "半价拿到接近 Opus 4.8 的能力，Claude Sonnet 5 发布": models/claude-sonnet-5.md
@@ -62,6 +63,8 @@ nav:
     - "ComfyUI 使用 GGUF量化模型教程": models/ComfyUI使用GGUF量化模型教程.md
     - "使用EvalScope对大模型评估": models/evalscope_tutorial.md
   - AI 编程工具:
+    - "Pi vs Claude Code，这个开源 Agent 成本只要一半": ai-coding/pi-vs-claude-code.md
+    - "271 家 AI 供应商串成一个免费池，这个开源网关把账单打到了 0": ai-coding/omniroute.md
     - "AGENTS.md + 模型分级 + 计划模式，Codex 省额度三件套": ai-coding/codex-quota-trio.md
     - "一行 git push，9 步流水线把 AI 代码自动审到能合并": ai-coding/git-no-mistakes.md
     - "OpenAI Codex 21 天写爆 37TB，你的 SSD 可能正在慢性死亡": ai-coding/codex-ssd-bug.md
