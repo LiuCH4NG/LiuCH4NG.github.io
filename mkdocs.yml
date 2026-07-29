@@ -43,6 +43,7 @@ theme:
 nav:
   - 首页: index.md
   - 模型评测与发布:
+    - "2.8 万亿参数、登顶代码榜，Kimi K3 把美股芯片股打崩后，它们怎么又涨回来了": models/kimi-k3-market-reaction.md
     - "全球最大开源大模型 Kimi K3：2.8T 参数深度评测与订阅机制全景调研": models/kimi-k3.md
     - "还在逐 Token 画框？NVIDIA LocateAnything-3B 把边界框一次画准": models/nvidia-locateanything-3b.md
     - "别再只看 benchmark，开发者真正在用的榜单长这样": models/opencode-go-ranking.md
@@ -63,6 +64,7 @@ nav:
     - "ComfyUI 使用 GGUF量化模型教程": models/ComfyUI使用GGUF量化模型教程.md
     - "使用EvalScope对大模型评估": models/evalscope_tutorial.md
   - AI 编程工具:
+    - "从一句话到一个零件，10K Star 的 CAD Skills 把 AI 编程变成了 AI 造物": ai-coding/claude-code-cad-skills.md
     - "Pi vs Claude Code，这个开源 Agent 成本只要一半": ai-coding/pi-vs-claude-code.md
     - "271 家 AI 供应商串成一个免费池，这个开源网关把账单打到了 0": ai-coding/omniroute.md
     - "AGENTS.md + 模型分级 + 计划模式，Codex 省额度三件套": ai-coding/codex-quota-trio.md
@@ -88,6 +90,8 @@ nav:
     - "Vibe Coding 实战复盘": ai-coding/Vibe_Coding_实战复盘.md
     - "Qwen3-Coder 中文教程": ai-coding/qwen3_coder_tutorial.md
   - Agent 与智能体架构:
+    - "MCP 发布史上最大更新，AI Agent 的「互联网协议」终于要真正工程化了": agent/mcp-biggest-update.md
+    - "OpenAI 的 AI 越狱了，它自己黑进 Hugging Face 只为偷一份答案": agent/openai-agent-hack-huggingface.md
     - "AI 原生 vs AI 赋能，差的不只是一个对话框": agent/ai-native-apps.md
     - "你的 Agent 记住了所有对话，为什么还是不懂你": agent/agent-user-memory.md
     - "MCP 是管道，OKF 是管道里的水，Google 刚发布的知识格式有什么用": agent/okf.md
@@ -124,6 +128,7 @@ nav:
     - "OpenCode v1.4.0 更新解读": products/opencode-v1.4.0.md
     - "OpenClaw v2026.4.7 更新解读": products/openclaw-v2026.4.7.md
   - 提示词与工程化:
+    - "删掉 80% 提示词后，Claude 反而更强了": prompt-eng/context-engineering-claude5.md
     - "Claude Code 常用命令速查": prompt-eng/claudecode-commands.md
     - "1333 行系统指令流出：苹果把 Siri 提示词写成了操作系统规范": prompt-eng/siri-prompt.md
     - "GitHub 82K Star 的 DESIGN.md": prompt-eng/awesome-design-md.md
@@ -133,6 +138,7 @@ nav:
   - 软件工程:
     - "优秀API设计": software-eng/优秀API设计.md
   - 管理与应用思考:
+    - "52 条语录，读懂 DeepSeek 通向 AGI 的 5 级台阶": thinking/deepseek-agi-roadmap.md
     - "工程师用 AI 效率翻倍，为什么团队交付没变快？": thinking/trae-it-reshape.md
     - "AI 时代管理者的核心能力": thinking/ai-manager-skills.md
     - "2026 AI Ascent Karpathy 演讲解读": thinking/2026-ai-ascent-karpathy.md

@@ -84,7 +84,7 @@
 :material-chart-bar:
 <span class="category-tile__body">
 <span class="category-tile__name">模型评测与发布</span>
-<span class="category-tile__count">19 篇文章</span>
+<span class="category-tile__count">20 篇文章</span>
 </span>
 </a>
 
@@ -92,7 +92,7 @@
 :material-laptop:
 <span class="category-tile__body">
 <span class="category-tile__name">AI 编程工具</span>
-<span class="category-tile__count">24 篇文章</span>
+<span class="category-tile__count">25 篇文章</span>
 </span>
 </a>
 
@@ -100,7 +100,7 @@
 :material-robot-outline:
 <span class="category-tile__body">
 <span class="category-tile__name">Agent 与智能体</span>
-<span class="category-tile__count">22 篇文章</span>
+<span class="category-tile__count">24 篇文章</span>
 </span>
 </a>
 
@@ -116,7 +116,7 @@
 :material-format-quote-open:
 <span class="category-tile__body">
 <span class="category-tile__name">提示词与工程化</span>
-<span class="category-tile__count">6 篇文章</span>
+<span class="category-tile__count">7 篇文章</span>
 </span>
 </a>
 
@@ -132,7 +132,7 @@
 :material-lightbulb-outline:
 <span class="category-tile__body">
 <span class="category-tile__name">管理与应用思考</span>
-<span class="category-tile__count">5 篇文章</span>
+<span class="category-tile__count">6 篇文章</span>
 </span>
 </a>
 
@@ -149,6 +149,19 @@
 ## 更新日志
 
 <div class="changelog" markdown="1">
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.07.29</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">Agent</span> <a href="agent/mcp-biggest-update/">MCP 发布史上最大更新，AI Agent 的「互联网协议」终于要真正工程化了</a></li>
+<li><span class="changelog__tag">Agent</span> <a href="agent/openai-agent-hack-huggingface/">OpenAI 的 AI 越狱了，它自己黑进 Hugging Face 只为偷一份答案</a></li>
+<li><span class="changelog__tag">模型</span> <a href="models/kimi-k3-market-reaction/">2.8 万亿参数、登顶代码榜，Kimi K3 把美股芯片股打崩后，它们怎么又涨回来了</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/claude-code-cad-skills/">从一句话到一个零件，10K Star 的 CAD Skills 把 AI 编程变成了 AI 造物</a></li>
+<li><span class="changelog__tag">提示词</span> <a href="prompt-eng/context-engineering-claude5/">删掉 80% 提示词后，Claude 反而更强了</a></li>
+<li><span class="changelog__tag">思考</span> <a href="thinking/deepseek-agi-roadmap/">52 条语录，读懂 DeepSeek 通向 AGI 的 5 级台阶</a></li>
+</ul>
+</div>
 
 <div class="changelog__group">
 <span class="changelog__date"></span>
