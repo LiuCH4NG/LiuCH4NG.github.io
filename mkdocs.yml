@@ -43,6 +43,7 @@ theme:
 nav:
   - 首页: index.md
   - 模型评测与发布:
+    - "DeepSeek-V4-Flash 真超 GLM-5.2 了？便宜是真的，幻觉也是真的": models/deepseek-v4-flash-vs-glm.md
     - "2.8 万亿参数、登顶代码榜，Kimi K3 把美股芯片股打崩后，它们怎么又涨回来了": models/kimi-k3-market-reaction.md
     - "全球最大开源大模型 Kimi K3：2.8T 参数深度评测与订阅机制全景调研": models/kimi-k3.md
     - "还在逐 Token 画框？NVIDIA LocateAnything-3B 把边界框一次画准": models/nvidia-locateanything-3b.md
@@ -64,6 +65,9 @@ nav:
     - "ComfyUI 使用 GGUF量化模型教程": models/ComfyUI使用GGUF量化模型教程.md
     - "使用EvalScope对大模型评估": models/evalscope_tutorial.md
   - AI 编程工具:
+    - "Codex + DeepSeek 用起来很香，但它看不见图，一个 Skill 就解决了": ai-coding/see-skill.md
+    - "一张图丢给 Claude Code，它回了我一个能在浏览器里转的 3D 模型": ai-coding/img2threejs.md
+    - "别再盲盒式用 AI 编程助手了，claude-tap 把每次 LLM 调用都摊在阳光下": ai-coding/claude-tap.md
     - "从一句话到一个零件，10K Star 的 CAD Skills 把 AI 编程变成了 AI 造物": ai-coding/claude-code-cad-skills.md
     - "Pi vs Claude Code，这个开源 Agent 成本只要一半": ai-coding/pi-vs-claude-code.md
     - "271 家 AI 供应商串成一个免费池，这个开源网关把账单打到了 0": ai-coding/omniroute.md

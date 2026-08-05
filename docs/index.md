@@ -84,7 +84,7 @@
 :material-chart-bar:
 <span class="category-tile__body">
 <span class="category-tile__name">模型评测与发布</span>
-<span class="category-tile__count">20 篇文章</span>
+<span class="category-tile__count">21 篇文章</span>
 </span>
 </a>
 
@@ -92,7 +92,7 @@
 :material-laptop:
 <span class="category-tile__body">
 <span class="category-tile__name">AI 编程工具</span>
-<span class="category-tile__count">25 篇文章</span>
+<span class="category-tile__count">28 篇文章</span>
 </span>
 </a>
 
@@ -149,6 +149,17 @@
 ## 更新日志
 
 <div class="changelog" markdown="1">
+
+<div class="changelog__group">
+<span class="changelog__date"></span>
+<span class="changelog__date-label">2026.08.05</span>
+<ul class="changelog__list">
+<li><span class="changelog__tag">模型</span> <a href="models/deepseek-v4-flash-vs-glm/">DeepSeek-V4-Flash 真超 GLM-5.2 了？便宜是真的，幻觉也是真的</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/see-skill/">Codex + DeepSeek 用起来很香，但它看不见图，一个 Skill 就解决了</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/img2threejs/">一张图丢给 Claude Code，它回了我一个能在浏览器里转的 3D 模型</a></li>
+<li><span class="changelog__tag">AI 编程</span> <a href="ai-coding/claude-tap/">别再盲盒式用 AI 编程助手了，claude-tap 把每次 LLM 调用都摊在阳光下</a></li>
+</ul>
+</div>
 
 <div class="changelog__group">
 <span class="changelog__date"></span>
